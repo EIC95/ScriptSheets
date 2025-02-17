@@ -4,18 +4,18 @@ import Slider from "react-slick";
 
 function Navbar(){
     const technologies = [
-        {'name':'C', 'directory':'c'},
-        {'name':'C++', 'directory':'cpp'},
-        {'name':'Docker', 'directory':'docker'},
-        {'name':'Java', 'directory':'java'},
-        {'name':'JavaScript', 'directory':'javascript'},
-        {'name':'Node.Js', 'directory':'node'},
-        {'name':'PHP', 'directory':'php'},
-        {'name':'Python', 'directory':'python'},
-        {'name':'React', 'directory':'react'},
-        {'name':'SQL', 'directory':'sql'},
-        {'name':'Express.Js', 'directory':'express'},
-        {'name':'MongoDB', 'directory':'mongodb'}
+        {'name':'C', 'directory':'c/basics'},
+        {'name':'C++', 'directory':'cpp/basics'},
+        {'name':'Docker', 'directory':'docker/basics'},
+        {'name':'Java', 'directory':'java/basics'},
+        {'name':'JavaScript', 'directory':'javascript/basics'},
+        {'name':'Node.Js', 'directory':'node/basics'},
+        {'name':'PHP', 'directory':'php/basics'},
+        {'name':'Python', 'directory':'python/basics'},
+        {'name':'React', 'directory':'react/basics'},
+        {'name':'SQL', 'directory':'sql/basics'},
+        {'name':'Express.Js', 'directory':'express/basics'},
+        {'name':'MongoDB', 'directory':'mongodb/basics'}
     ]
 
     const settings = {
