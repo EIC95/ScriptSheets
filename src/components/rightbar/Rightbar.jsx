@@ -18,8 +18,8 @@ function Rightbar() {
     }, [tech, subject]);
 
     useEffect(() => {
-        const h3Elements = Array.from(document.getElementsByTagName('h3'));
-        setTitles(h3Elements);
+        const h2Elements = Array.from(document.getElementsByTagName('h2'));
+        setTitles(h2Elements);
     }, []);
 
     useEffect(() => {

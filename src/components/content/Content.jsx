@@ -11,7 +11,6 @@ function Content (){
         fetch(`/${tech}/${subject}.md`)
             .then((res) => res.text())
             .then((text)=>{setContent(text)})
-
     }, [tech, subject]);
 
     return(
