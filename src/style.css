@@ -1,13 +1,15 @@
 [data-theme="light"] {
     --background: #ffffff;
-    --accent: #000000;
-    --text: #000000;
+    --accent: #E4E4E7;
+    --text: #353535;
+    --select: #E4E4E7;
 }
 
 [data-theme="dark"] {
-    --background: #181818;
-    --accent: #ffffff;
-    --text: #ffffff;
+    --background: #18181B;
+    --accent: #353535;
+    --text: #DCDCDC;
+    --select: #353535;
 }
 
 :root{
