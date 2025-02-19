@@ -1,3 +1,4 @@
+# Langage C
 - [Bases du Langage C](basics)
 - [Variables](variables)
 - [Casting](casting)

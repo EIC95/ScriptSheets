@@ -14,7 +14,7 @@ function Content (){
     }, [tech, subject]);
 
     return(
-        <div>
+        <div className='content'>
             <Markdown>{content}</Markdown>
         </div>
     )

@@ -13,7 +13,8 @@
 }
 
 :root{
-    --primary: #000000;
+    --default: #000000;
+    --primary: #FFFFFF;
 }
 
 body{
@@ -24,6 +25,12 @@ body{
     background-color: var(--background);
     color: var(--text);
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 .hover:hover{

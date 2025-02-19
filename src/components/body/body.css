@@ -1,0 +1,40 @@
+.main-body{
+    display: flex;
+}
+
+.sidebar{
+    width: 25%;
+    overflow-y: auto;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+.sidebar ul li{
+    border-left: 2px solid var(--accent);
+    padding-left: 10px;
+}
+
+.sidebar ul li:hover{
+    border-left-color: var(--primary);
+}
+
+.content{
+    width: 50%;
+    border-left: solid 1px var(--accent);
+    border-right: solid 1px var(--accent);
+}
+
+.rightbar{
+    width:25%;
+    overflow-y: auto;
+}
+
+.rightbar ul{
+    list-style: none;
+}

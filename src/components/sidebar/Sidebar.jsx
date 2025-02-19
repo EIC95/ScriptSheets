@@ -13,7 +13,7 @@ function Sidebar(){
     }, [tech]);
 
     return(
-        <div>
+        <div className='sidebar'>
             <Markdown>{markdown}</Markdown>
         </div>
     )

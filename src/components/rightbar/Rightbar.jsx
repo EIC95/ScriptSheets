@@ -35,7 +35,7 @@ function Rightbar() {
     }, [parts, titles]);
 
     return (
-        <div>
+        <div className='rightbar'>
             <ul>
                 {parts.length > 0 ? parts.map((part, index) => (
                     <li key={index}>
