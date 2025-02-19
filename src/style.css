@@ -28,10 +28,11 @@ body{
     scroll-behavior: smooth;
 }
 
-*{
-    margin: 0px;
+* {
+    margin: 0;
     box-sizing: border-box;
 }
+
 
 .hover:hover{
     color: var(--primary);
