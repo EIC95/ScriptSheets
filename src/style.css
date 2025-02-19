@@ -1,0 +1,39 @@
+[data-theme="light"] {
+    --background: #ffffff;
+    --accent: #000000;
+    --text: #000000;
+}
+
+[data-theme="dark"] {
+    --background: #181818;
+    --accent: #ffffff;
+    --text: #ffffff;
+}
+
+:root{
+    --primary: #000000;
+}
+
+body{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.hover:hover{
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.Link, a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.Link:hover, a:hover{
+    color: var(--primary);
+    cursor: pointer;
+}

@@ -2,6 +2,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Body from "./components/body/Body.jsx";
 import Home from "./components/home/Home.jsx";
+import './style.css'
 
 function App() {
     return(
