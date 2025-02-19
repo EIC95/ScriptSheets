@@ -1,6 +1,7 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import Markdown from "react-markdown";
+import './content.css'
 
 function Content (){
     const [content, setContent] = useState("");

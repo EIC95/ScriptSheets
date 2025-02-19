@@ -1,0 +1,9 @@
+.rightbar{
+    width:20%;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.rightbar ul{
+    list-style: none;
+}

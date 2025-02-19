@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import  './rightbar.css'
 
 function Rightbar() {
     const { tech, subject } = useParams();

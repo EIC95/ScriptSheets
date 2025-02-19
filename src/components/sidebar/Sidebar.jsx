@@ -1,6 +1,7 @@
 import Markdown from "react-markdown";
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
+import './sidebar.css'
 
 function Sidebar(){
     const [markdown , setMarkdown] = useState("");

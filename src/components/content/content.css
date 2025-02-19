@@ -1,0 +1,8 @@
+.content{
+    width: 60%;
+    border-left: solid 1px var(--accent);
+    border-right: solid 1px var(--accent);
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
