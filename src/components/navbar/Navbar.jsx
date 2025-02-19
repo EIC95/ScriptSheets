@@ -1,10 +1,13 @@
 import {Link, useLocation} from "react-router-dom";
 import ThemeIcon from "../theme-icon/ThemeIcon.jsx";
-import Slider from "react-slick";
+import './Navbar.css'
+import {useState} from "react";
 
 
 
 function Navbar(){
+    const [open, setOpen] = useState(false);
+
     const technologies = [
         {'name':'C', 'directory':'c/basics' , 'icon':'c.svg' , 'color':'#3949AB'},
         {'name':'C++', 'directory':'cpp/basics' , 'icon':'cpp.svg' , 'color':'#0086D4'},
@@ -21,16 +24,6 @@ function Navbar(){
         {'name':'MongoDB', 'directory':'mongodb/basics' , 'icon':'mongodb.svg' , 'color':'#00684A'}
     ];
 
-    const settings = {
-        dots: false,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: true,
-        swipeToSlide: true,
-    };
-
     const location = useLocation().pathname;
     let path = null;
     const root = document.querySelector(':root')
@@ -45,24 +38,21 @@ function Navbar(){
 
     return(
         <nav>
-            <div>
-                <div>
-                    {path ? <Link to={'/'}><img src={path} alt={'logo'} width={32} height={32} /></Link> : <h1>CheatSheet</h1>}
+            {path ? <Link to={'/'}><img src={path} alt={'logo'} width={32} height={32} /></Link> : <h1>CheatSheet</h1>}
+            <div className='nav-left'>
+                <div className="dropdown" onClick={() => setOpen(!open)} onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(!open)}>
+                    <a href="javascript:void(0)" className="dropbtn">CheatSheets {open ? "▲" : "▼"}</a>
+                    <div className="dropdown-content">
+                        {technologies.map((tech) => {
+                            return (
+                                <Link key={tech.name} className='Link' to={tech.directory}>{tech.name}</Link>
+                            )
+                        })}
+                    </div>
                 </div>
-                <div>
-                    <a href='https://ko-fi.com/X8X511TO4J' target='_blank'><img height='32'  src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border={0} alt='Buy Me a Coffee at ko-fi.com' /></a>
-                    <ThemeIcon />
-                </div>
+                <a href='https://ko-fi.com/X8X511TO4J' target='_blank'><img height='32'  src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border={0} alt='Buy Me a Coffee at ko-fi.com' /></a>
+                <ThemeIcon />
             </div>
-            <Slider {...settings}>
-                {technologies.map((tech) => {
-                    return(
-                        <div key={tech.name}>
-                            <Link className='Link' to={tech.directory}>{tech.name}</Link>
-                        </div>
-                    )
-                })}
-            </Slider>
         </nav>
     )
 }

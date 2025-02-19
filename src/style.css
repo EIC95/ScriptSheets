@@ -21,6 +21,7 @@ body{
     font-style: normal;
     background-color: var(--background);
     color: var(--text);
+    margin: 0;
 }
 
 .hover:hover{
