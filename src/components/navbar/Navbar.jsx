@@ -38,7 +38,7 @@ function Navbar(){
 
     return(
         <nav>
-            {path ? <Link to={'/'}><img src={path} alt={'logo'} width={32} height={32} /></Link> : <h1>CheatSheet</h1>}
+            {path ? <Link to={'/'}><img src={path} alt={'logo'} width={48} height={48} /></Link> : <h1>CheatSheet</h1>}
             <div className='nav-left'>
                 <div className="dropdown" onClick={() => setOpen(!open)} onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(!open)}>
                     <a href="javascript:void(0)" className="dropbtn">CheatSheets {open ? "▲" : "▼"}</a>
