@@ -35,6 +35,9 @@ function Rightbar() {
 
     return (
         <div className="rightbar">
+            <h4>
+                On this page
+            </h4>
             <ul>
                 {parts.length > 0
                     ? parts.map((part, index) => (
