@@ -24,12 +24,12 @@ function Navbar(){
         {'name':'MongoDB', 'directory':'mongodb/basics' , 'icon':'mongodb.svg' , 'color':'#00684A'}
     ];
 
-    const location = useLocation().pathname;
+    const location = useLocation().pathname.match(/\/(.*?)\//)[1];
     let path = null;
     const root = document.querySelector(':root')
 
     for (const tech of technologies) {
-        if (location.includes(tech.directory)) {
+        if (tech.name.toLowerCase() ===  location) {
             root.style.setProperty('--primary' , tech.color)
             path = `/assets/${tech.icon}`;
             break;
