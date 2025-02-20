@@ -1,48 +1,48 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import  './rightbar.css'
+import "./rightbar.css";
 
 function Rightbar() {
     const { tech, subject } = useParams();
     const [parts, setParts] = useState([]);
-    const [titles, setTitles] = useState([]);
 
+    // Récupération des titres du fichier Markdown
     useEffect(() => {
         fetch(`/${tech}/${subject}.md`)
             .then(res => res.text())
             .then(text => {
-                const matches = text.match(/^###\s(.+)$/gm) || [];
-                setParts(matches.map(title => title.replace(/^###\s/, "")));
+                const matches = text.match(/^##\s(.+)$/gm) || [];
+                setParts(matches.map(title => title.replace(/^##\s/, "")));
             })
             .catch(() => setParts([]));
     }, [tech, subject]);
 
+    // Ajout des IDs aux titres H2 existants
     useEffect(() => {
-        const h2Elements = Array.from(document.getElementsByTagName('h2'));
-        setTitles(h2Elements);
-    }, []);
+        if (parts.length === 0) return;
 
-    useEffect(() => {
-        if (titles.length === 0 || parts.length === 0) return;
+        const h2Elements = document.querySelectorAll("h2");
 
-        titles.forEach((title) => {
+        h2Elements.forEach((title) => {
             const cleanTitle = title.textContent.trim();
-            const id = cleanTitle.toLowerCase().replace(/\s+/g, '-');
+            const id = cleanTitle.toLowerCase().replace(/\s+/g, "-");
 
             if (parts.includes(cleanTitle)) {
-                title.setAttribute('id', id);
+                title.setAttribute("id", id);
             }
         });
-    }, [parts, titles]);
+    }, [parts]);
 
     return (
-        <div className='rightbar'>
+        <div className="rightbar">
             <ul>
-                {parts.length > 0 ? parts.map((part, index) => (
-                    <li key={index}>
-                        <a href={`#${part.toLowerCase().replace(/\s+/g, '-')}`}>{part}</a>
-                    </li>
-                )) : ""}
+                {parts.length > 0
+                    ? parts.map((part, index) => (
+                        <li key={index}>
+                            <a href={`#${part.toLowerCase().replace(/\s+/g, "-")}`}>{part}</a>
+                        </li>
+                    ))
+                    : ""}
             </ul>
         </div>
     );
