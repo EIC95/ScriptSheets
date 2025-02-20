@@ -2,6 +2,7 @@ import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import Markdown from "react-markdown";
 import './content.css'
+import remarkGfm from 'remark-gfm'
 
 function Content (){
     const [content, setContent] = useState("");
@@ -15,7 +16,7 @@ function Content (){
 
     return(
         <div className='content'>
-            <Markdown>{content}</Markdown>
+            <Markdown remarkPlugins={[remarkGfm]}>{content}</Markdown>
         </div>
     )
 }
