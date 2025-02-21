@@ -51,3 +51,15 @@
     font-weight: inherit;
 
 }
+
+td{
+    border-top: solid 1px var(--accent);
+    padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
