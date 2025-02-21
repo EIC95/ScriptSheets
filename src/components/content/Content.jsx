@@ -3,6 +3,8 @@ import {useEffect, useState} from "react";
 import Markdown from "react-markdown";
 import './content.css'
 import remarkGfm from 'remark-gfm'
+import rehypeHighlight from "rehype-highlight";
+import 'highlight.js/styles/github-dark.css'
 
 function Content (){
     const [content, setContent] = useState("");
@@ -16,7 +18,7 @@ function Content (){
 
     return(
         <div className='content'>
-            <Markdown remarkPlugins={[remarkGfm]}>{content}</Markdown>
+            <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>{content}</Markdown>
         </div>
     )
 }
