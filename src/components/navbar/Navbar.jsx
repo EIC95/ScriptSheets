@@ -9,19 +9,19 @@ function Navbar(){
     const [open, setOpen] = useState(false);
 
     const technologies = [
-        {'name':'C', 'directory':'c/basics' , 'icon':'c.svg' , 'color':'#3949AB'},
-        {'name':'C++', 'directory':'cpp/basics' , 'icon':'cpp.svg' , 'color':'#0086D4'},
-        {'name':'C#', 'directory':'csharp/basics' , 'icon':'csharp.svg' , 'color':'#5D3FD3'},
-        {'name':'Docker', 'directory':'docker/basics' , 'icon':'docker.svg' , 'color':'#00599C'},
-        {'name':'Express.Js', 'directory':'express/basics' , 'icon':'express.svg' , 'color':'#6cc24a'},
-        {'name':'Java', 'directory':'java/basics' , 'icon':'java.svg' , 'color':'#ED8B00'},
-        {'name':'JavaScript', 'directory':'javascript/basics' , 'icon':'javascript.svg' , 'color':'#FFBF00'},
-        {'name':'Node.Js', 'directory':'node/basics' , 'icon':'node.svg' , 'color':'#6cc24a'},
-        {'name':'PHP', 'directory':'php/basics' , 'icon':'php.svg' , 'color':'#5D3FD3'},
-        {'name':'Python', 'directory':'python/basics' , 'icon':'python.svg' , 'color':'#FFBF00'},
-        {'name':'React', 'directory':'react/basics' , 'icon':'react.svg' , 'color':'#61DBFB'},
-        {'name':'SQL', 'directory':'sql/basics' , 'icon':'sql.svg' , 'color':'#61DBFB'},
-        {'name':'MongoDB', 'directory':'mongodb/basics' , 'icon':'mongodb.svg' , 'color':'#00684A'}
+        {'name':'C', 'directory' : 'c' , 'path':'c/basics' , 'icon':'c.svg' , 'color':'#3949AB'},
+        {'name':'C++', 'directory' : 'cpp' , 'path':'cpp/basics' , 'icon':'cpp.svg' , 'color':'#0086D4'},
+        {'name':'C#', 'directory' : 'csharp' , 'path':'csharp/basics' , 'icon':'csharp.svg' , 'color':'#5D3FD3'},
+        {'name':'Docker', 'directory' : 'docker' , 'path':'docker/basics' , 'icon':'docker.svg' , 'color':'#00599C'},
+        {'name':'Express.Js', 'directory' : 'express' , 'path':'express/basics' , 'icon':'express.svg' , 'color':'#6cc24a'},
+        {'name':'Java', 'directory' : 'java' , 'path':'java/basics' , 'icon':'java.svg' , 'color':'#ED8B00'},
+        {'name':'JavaScript', 'directory' : 'javascript' , 'path':'javascript/basics' , 'icon':'javascript.svg' , 'color':'#FFBF00'},
+        {'name':'Node.Js', 'directory' : 'node' , 'path':'node/basics' , 'icon':'node.svg' , 'color':'#6cc24a'},
+        {'name':'PHP', 'directory' : 'php' , 'path':'php/basics' , 'icon':'php.svg' , 'color':'#5D3FD3'},
+        {'name':'Python', 'directory' : 'python' , 'path':'python/basics' , 'icon':'python.svg' , 'color':'#FFBF00'},
+        {'name':'React', 'directory' : 'react' , 'path':'react/basics' , 'icon':'react.svg' , 'color':'#61DBFB'},
+        {'name':'SQL', 'directory' : 'sql' , 'path':'sql/basics' , 'icon':'sql.svg' , 'color':'#61DBFB'},
+        {'name':'MongoDB', 'directory' : 'mongodb' , 'path':'mongodb/basics' , 'icon':'mongodb.svg' , 'color':'#00684A'}
     ];
 
     const location = useLocation();
@@ -32,13 +32,14 @@ function Navbar(){
 
     if(extractedLocation){
         for (const tech of technologies) {
-            if (tech.name.toLowerCase() ===  extractedLocation) {
+            if (tech.directory ===  extractedLocation) {
                 root.style.setProperty('--primary' , tech.color)
                 path = `/assets/${tech.icon}`;
                 break;
             }
         }
     }
+    
 
     return(
         <nav>
@@ -49,7 +50,7 @@ function Navbar(){
                     <div className="dropdown-options">
                         {technologies.map((tech) => {
                             return (
-                                <Link key={tech.name} className='Link' to={tech.directory}>{tech.name}</Link>
+                                <Link key={tech.name} className='Link' to={tech.path}>{tech.name}</Link>
                             )
                         })}
                     </div>

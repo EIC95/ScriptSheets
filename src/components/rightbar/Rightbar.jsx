@@ -45,7 +45,7 @@ function Rightbar() {
                             <a href={`#${part.toLowerCase().replace(/\s+/g, "-")}`}>{part}</a>
                         </li>
                     ))
-                    : ""}
+                    : "Nothing here"}
             </ul>
         </div>
     );
