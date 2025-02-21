@@ -9,12 +9,12 @@ function Navbar(){
     const [open, setOpen] = useState(false);
 
     const technologies = [
-        {'name':'C', 'directory' : 'c' , 'path':'c/basics' , 'icon':'c.svg' , 'color':'#3949AB'},
+        {'name':'C', 'directory' : 'c' , 'path':'c/basics' , 'icon':'c.svg' , 'color':'#283593'},
         {'name':'C++', 'directory' : 'cpp' , 'path':'cpp/basics' , 'icon':'cpp.svg' , 'color':'#0086D4'},
         {'name':'C#', 'directory' : 'csharp' , 'path':'csharp/basics' , 'icon':'csharp.svg' , 'color':'#5D3FD3'},
         {'name':'Docker', 'directory' : 'docker' , 'path':'docker/basics' , 'icon':'docker.svg' , 'color':'#00599C'},
         {'name':'Express.Js', 'directory' : 'express' , 'path':'express/basics' , 'icon':'express.svg' , 'color':'#6cc24a'},
-        {'name':'Java', 'directory' : 'java' , 'path':'java/basics' , 'icon':'java.svg' , 'color':'#ED8B00'},
+        {'name':'Java', 'directory' : 'java' , 'path':'java/basics' , 'icon':'java.svg' , 'color':'#D43A02'},
         {'name':'JavaScript', 'directory' : 'javascript' , 'path':'javascript/basics' , 'icon':'javascript.svg' , 'color':'#FFBF00'},
         {'name':'Node.Js', 'directory' : 'node' , 'path':'node/basics' , 'icon':'node.svg' , 'color':'#6cc24a'},
         {'name':'PHP', 'directory' : 'php' , 'path':'php/basics' , 'icon':'php.svg' , 'color':'#5D3FD3'},
@@ -43,7 +43,7 @@ function Navbar(){
 
     return(
         <nav>
-            {path ? <Link to={'/'}><img src={path} alt={'logo'} className={'logo'} /></Link> : <Link to={'/'} style={{color:'var(--primary)',fontWeight:'bold' , fontSize:'larger'}}>Cheat Sheets</Link>}
+            {path ? <Link to={'/'}><img src={path} alt={'logo'} className={'logo'} /></Link> : <Link to={'/'} style={{color:'var(--default)',fontWeight:'bold' , fontSize:'larger'}}>Cheat Sheets</Link>}
             <div className='nav-left'>
                 <div className="dropdown" onClick={() => setOpen(!open)} onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(!open)}>
                     <a href="javascript:void(0)">Cheat Sheets <span className='arrow'>{open ? "▲" : "▼"}</span></a>

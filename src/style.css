@@ -7,15 +7,16 @@
 }
 
 [data-theme="dark"] {
-    --background: #050505;
-    --accent: #28282B;
-    --text: #8d8d8d;
+    --background: #18181B ;
+    --accent: #424242  ;
+    --text: #bdbdbd ;
     --title:#ffffff;
-    --shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 :root{
-    --primary: #367CFF;
+    --primary: var(--default);
+    --default: #1242a8;
     --code:#0D1117;
     --codeInverted: #FFFFFF;
 }

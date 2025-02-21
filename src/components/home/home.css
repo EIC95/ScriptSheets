@@ -21,10 +21,14 @@
 }
 
 .cta-container a{
-    background-color: var(--primary);
+    background-color: var(--default);
     padding: 10px;
     color: white;
     border-radius: 8px;
+}
+
+.cta-container a:hover{
+    color: white;
 }
 
 .cta-container{
@@ -38,7 +42,7 @@
 }
 
 .home-title{
-    color: var(--primary);
+    color: var(--default);
 }
 
 .cheatsheets-container{

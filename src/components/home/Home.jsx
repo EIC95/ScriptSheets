@@ -22,10 +22,10 @@ function Home(){
             <div className="hero">
                 <div>
                     <h1 className={'home-title'}>Stay on Track</h1>
-                    <p>Working with multiple languages is great…but it can also be a real headache. Syntax can get mixed up, and it&#39;s easy to forget how to do certain things. That’s why these notes exist, to help everyone stay on track. After all, no one can remember everything!</p>
+                    <p>Working with multiple technologies is great…but it can also be a real headache. Syntax can get mixed up, and it&#39;s easy to forget how to do certain things. That’s why these notes exist, to help everyone stay on track. After all, no one can remember everything!</p>
                     <div className={'cta-container'}>
                         <a href={'#cheatsheets'}>Getting started</a>
-                        <a href={'https://github.com/EIC95/CheatSheet.git'}>Contribute</a>
+                        <a target='_blank' href={'https://github.com/EIC95/CheatSheet.git'}>Contribute</a>
                     </div>
                 </div>
                 <img src={'/assets/Coder.svg'} alt={'coder-illustration'} width={250}/>
