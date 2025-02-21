@@ -23,6 +23,15 @@
     word-spacing: 2px;
 }
 
+.content div{
+    margin-top: 15px;
+}
+
+.edit{
+    display: flex;
+    align-items: center;
+}
+
 .content code{
     color: var(--primary);
     font-weight: bold;
@@ -62,5 +71,9 @@ table{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+}
+
+.underline{
+    text-decoration: underline;
 }
 

@@ -19,12 +19,12 @@ function ThemeIcon() {
             {theme === "light" ? (
                 <>
                     <IoIosSunny onClick={toggleTheme} size={32} color="black" className={'hover'}/>
-                    <IoLogoGithub size={32} color="black" className={'hover'} />
+                    <a href='https://github.com/EIC95/CheatSheet.git' target={'_blank'}><IoLogoGithub size={32} color="black" className={'hover'} /></a>
                 </>
             ) : (
                 <>
                     <FaMoon onClick={toggleTheme} color="white" size={32} className={'hover'} />
-                    <IoLogoGithub size={32} color="white" className={'hover'} />
+                    <a href='https://github.com/EIC95/CheatSheet.git' target={'_blank'}><IoLogoGithub size={32} color="white" className={'hover'} /></a>
                 </>
             )}
         </>

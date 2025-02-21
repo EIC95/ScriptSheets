@@ -5,7 +5,7 @@ import './sidebar.css'
 
 function Sidebar(){
     const [markdown , setMarkdown] = useState("");
-    const { tech } = useParams();
+    const { tech, subject } = useParams();
 
     useEffect(()=>{
         fetch(`/${tech}/README.md`)
