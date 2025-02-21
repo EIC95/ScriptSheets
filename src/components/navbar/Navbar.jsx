@@ -41,8 +41,8 @@ function Navbar(){
             {path ? <Link to={'/'}><img src={path} alt={'logo'} className={'logo'} /></Link> : <h1>CheatSheet</h1>}
             <div className='nav-left'>
                 <div className="dropdown" onClick={() => setOpen(!open)} onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(!open)}>
-                    <a href="javascript:void(0)" className="dropbtn">CheatSheets {open ? "▲" : "▼"}</a>
-                    <div className="dropdown-content">
+                    <a href="javascript:void(0)" className="dropbtn">CheatSheets <span className='arrow'>{open ? "▲" : "▼"}</span></a>
+                    <div className="dropdown-options">
                         {technologies.map((tech) => {
                             return (
                                 <Link key={tech.name} className='Link' to={tech.directory}>{tech.name}</Link>

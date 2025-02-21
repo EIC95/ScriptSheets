@@ -28,30 +28,39 @@ nav{
     height: 32px;
 }
 
-.dropdown{
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:var(--background);
+    border-radius:5px;
+    width: fit-content;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5);
+}
+
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+
+.dropdown-options a {
+    display: block;
+    color: var(--text);
+    padding: 10px 20px;
     height: fit-content;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 36px;
-    background-color: var(--select);
-    min-width: 115px;
-    z-index: 1;
+.dropdown-options a:hover {
+    background-color: var(--accent);
+    border-radius:5px;
 }
 
-.dropdown-content .Link {
-    color: var(--text);
-    width: fit-content;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.arrow{
+    font-size: 13px;
 }
 
 
