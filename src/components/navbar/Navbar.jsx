@@ -25,14 +25,24 @@ function Navbar(){
     ];
 
     const location = useLocation();
-    const match = location.pathname.match(/\/(.*?)\//);
+    const regex = new RegExp(/\/(.*?)\//)
+    const match = location.pathname.match(regex);
+    const subject = location.pathname
+            .replace(regex, ' ')
+            .trim()
+            .split(' ')[0]
+            .charAt(0).toUpperCase()
+            + location.pathname.replace(regex, ' ').trim().split(' ')[0].slice(1).toLowerCase();
     const extractedLocation = match ? match[1] : null;
     let path = null;
-    const root = document.querySelector(':root')
+    const root = document.querySelector(':root');
+    const titleElement = document.getElementsByTagName('title')[0];
+    titleElement.text = 'Cheat Sheets';
 
     if(extractedLocation){
         for (const tech of technologies) {
             if (tech.directory ===  extractedLocation) {
+                titleElement.text = `${tech.name} - ${subject}`
                 root.style.setProperty('--primary' , tech.color)
                 path = `/assets/${tech.icon}`;
                 break;
