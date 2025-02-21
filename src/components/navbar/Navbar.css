@@ -5,6 +5,7 @@ nav{
     align-items: center;
     border-bottom: solid 1px var(--accent);
     height: 10vh;
+    box-shadow: var(--shadow);
 }
 
 .nav-left{
@@ -40,7 +41,7 @@ nav{
     background-color:var(--background);
     border-radius:5px;
     width: fit-content;
-    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: var(--shadow);
 }
 
 .dropdown:hover .dropdown-options {
@@ -55,8 +56,11 @@ nav{
 }
 
 .dropdown-options a:hover {
-    background-color: var(--accent);
     border-radius:5px;
+}
+
+.dropdown a{
+    color: var(--title);
 }
 
 .arrow{
