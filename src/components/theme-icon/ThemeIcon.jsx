@@ -1,5 +1,5 @@
 import { IoIosSunny, IoLogoGithub } from "react-icons/io";
-import { FaMoon } from "react-icons/fa";
+import { FiMoon } from "react-icons/fi";
 import { useState, useEffect } from "react";
 
 function ThemeIcon() {
@@ -18,13 +18,13 @@ function ThemeIcon() {
         <>
             {theme === "light" ? (
                 <>
-                    <IoIosSunny onClick={toggleTheme} size={32} color="black" className={'hover'}/>
-                    <a href='https://github.com/EIC95/CheatSheet.git' target={'_blank'}><IoLogoGithub size={32} color="black" className={'hover'} /></a>
+                    <IoIosSunny onClick={toggleTheme} size={32} color="black" className={'hover icon'}/>
+                    <a href='https://github.com/EIC95/CheatSheet.git' target={'_blank'}><IoLogoGithub size={32} color="black" className={'hover icon'} /></a>
                 </>
             ) : (
                 <>
-                    <FaMoon onClick={toggleTheme} color="white" size={32} className={'hover'} />
-                    <a href='https://github.com/EIC95/CheatSheet.git' target={'_blank'}><IoLogoGithub size={32} color="white" className={'hover'} /></a>
+                    <FiMoon onClick={toggleTheme} color="white" size={32} className={'hover icon'} />
+                    <a href='https://github.com/EIC95/CheatSheet.git' target={'_blank'}><IoLogoGithub size={32} color="white" className={'hover icon'} /></a>
                 </>
             )}
         </>

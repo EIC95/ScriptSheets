@@ -5,7 +5,9 @@
     height: 90vh;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 50px;
+    padding: 28px 50px;
+    line-height: 1.8;
+    word-spacing: 2px;
 }
 
 .content h1{
@@ -16,11 +18,6 @@
 .content h2{
     margin-bottom: 15px;
     margin-top: 15px;
-}
-
-.content {
-    line-height: 1.8;
-    word-spacing: 2px;
 }
 
 .content div{

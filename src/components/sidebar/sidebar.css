@@ -14,13 +14,14 @@
 
 .sidebar ul li{
     margin-bottom: 15px;
-    padding-left: 15px;
     width: fit-content;
 }
 .sidebar ul li a{
     line-height: 1.5;
+    padding-left: 15px;
+    display: inline-block;
 }
 
-.sidebar ul li:hover{
+.sidebar ul li a:hover{
     border-left: solid 2px var(--primary);
 }
