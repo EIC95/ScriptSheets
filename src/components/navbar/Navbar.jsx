@@ -24,15 +24,19 @@ function Navbar(){
         {'name':'MongoDB', 'directory':'mongodb/basics' , 'icon':'mongodb.svg' , 'color':'#00684A'}
     ];
 
-    const location = useLocation().pathname.match(/\/(.*?)\//)[1];
+    const location = useLocation();
+    const match = location.pathname.match(/\/(.*?)\//);
+    const extractedLocation = match ? match[1] : null;
     let path = null;
     const root = document.querySelector(':root')
 
-    for (const tech of technologies) {
-        if (tech.name.toLowerCase() ===  location) {
-            root.style.setProperty('--primary' , tech.color)
-            path = `/assets/${tech.icon}`;
-            break;
+    if(extractedLocation){
+        for (const tech of technologies) {
+            if (tech.name.toLowerCase() ===  extractedLocation) {
+                root.style.setProperty('--primary' , tech.color)
+                path = `/assets/${tech.icon}`;
+                break;
+            }
         }
     }
 
