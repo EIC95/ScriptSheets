@@ -1,8 +1,14 @@
 .sidebar{
-    width: 20%;
+    width: 75%;
     overflow-y: auto;
-    height: 90vh;
-    padding: 50px 35px;
+    height: 95vh;
+    padding: 35px 35px;
+    overflow-x: hidden;
+    position: absolute;
+    background-color: var(--background);
+    z-index: 100;
+    display: none;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar ul{
@@ -24,4 +30,29 @@
 
 .sidebar ul li a:hover{
     border-left: solid 2px var(--primary);
+}
+
+@media (min-width: 768px){
+    .sidebar{
+       width: 50%;
+        height: 94vh;
+    }
+}
+
+@media (min-width: 1024px){
+    .sidebar{
+        display: block;
+        width: 20%;
+        box-shadow: none;
+        position: inherit;
+        z-index: 0;
+        height: 91vh;
+        background-color: inherit;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sidebar{
+        height: 93vh;
+    }
 }

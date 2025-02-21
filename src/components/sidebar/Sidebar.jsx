@@ -2,10 +2,11 @@ import Markdown from "react-markdown";
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import './sidebar.css'
+import 'animate.css'
 
 function Sidebar(){
     const [markdown , setMarkdown] = useState("");
-    const { tech, subject } = useParams();
+    const { tech } = useParams();
 
     useEffect(()=>{
         fetch(`/${tech}/README.md`)
@@ -14,7 +15,7 @@ function Sidebar(){
     }, [tech]);
 
     return(
-        <div className='sidebar'>
+        <div className='sidebar animate__animated' id={'sidebar'}>
             <Markdown>{markdown}</Markdown>
         </div>
     )

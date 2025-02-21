@@ -1,9 +1,10 @@
 .rightbar{
     width:20%;
-    height: 90vh;
+    height: 91vh;
     overflow-y: auto;
     padding-top: 50px;
     padding-left: 25px ;
+    display: none;
 }
 
 .rightbar ul{
@@ -15,4 +16,16 @@
 .rightbar ul li{
     margin-bottom: 15px;
     line-height: 1.5;
+}
+
+@media (min-width: 1024px) {
+    .rightbar{
+        display: block;
+    }
+}
+
+@media (min-width: 1440px) {
+    .rightbar{
+        height: 93vh;
+    }
 }

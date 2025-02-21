@@ -3,15 +3,25 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 5vh;
     box-shadow: var(--shadow);
+}
+
+.favicon{
+    width: 32px;
+    height: 32px;
+    color: var(--default);
+}
+
+.support{
+    display: none;
 }
 
 .nav-left{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 70%;
 }
 
 .nav-left a{
@@ -19,8 +29,8 @@ nav{
 }
 
 .logo{
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
 }
 
 .icon{
@@ -65,5 +75,55 @@ nav{
 .arrow{
     font-size: 13px;
 }
+
+@media (min-width: 768px) {
+    .support{
+        display: block;
+    }
+
+    .nav-left{
+        width: 75%;
+    }
+
+    .logo{
+        width: 48px;
+        height: 48px;
+    }
+
+    nav{
+        height:6vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bar{
+        display: none;
+    }
+
+    .nav-left{
+        width: 40%;
+    }
+
+    nav{
+        height: 9vh;
+    }
+
+    .nav-left{
+        width: 35%;
+    }
+}
+
+@media(min-width: 1440px){
+    nav{
+        height: 7vh;
+    }
+}
+
+@media (min-width: 2560px) {
+    .nav-left{
+        width: 20%;
+    }
+}
+
 
 

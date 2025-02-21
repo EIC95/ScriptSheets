@@ -34,6 +34,7 @@ body{
     color: var(--text);
     margin: 0;
     scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 
 * {

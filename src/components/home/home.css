@@ -1,12 +1,21 @@
-.hero{
-    display: flex;
-    justify-content: space-around;
-    height: 90vh;
-    align-items: center;
+.home{
+    height: 95vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.hero div{
-    width: 50%;
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 95vh;
+    padding-bottom: 125px;
+}
+
+.hero img{
+    align-self: center;
+    margin-bottom: 15px;
 }
 
 .home h1{
@@ -33,12 +42,12 @@
 
 .cta-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
 .home{
-    padding: 0 150px;
+
 }
 
 .home-title{
@@ -50,7 +59,7 @@
     flex-wrap: wrap;
     margin-top: 2rem;
     gap: 1rem;
-    width: 100%;
+    justify-content: center;
 }
 
 .cheatsheets-container a{
@@ -70,10 +79,85 @@
 }
 
 footer{
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-footer hr{
-    margin-bottom: 2rem;
+hr{
+    margin-top: 2rem;
 }
+
+@media (min-width: 375px) {
+    .hero{
+        padding-bottom: 150px;
+    }
+}
+
+@media (min-width: 425px) {
+    .hero{
+        padding-bottom: 175px;
+    }
+}
+
+@media (min-width: 768px) {
+    .home{
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 94vh;
+    }
+
+    .cta-container{
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    .hero{
+        padding-bottom: 200px;
+    }
+
+    .hero img{
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home{
+        height: 91vh;
+    }
+
+    .hero{
+        padding-bottom: 0;
+        flex-direction: inherit;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .hero div{
+        width: 45%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .home{
+        height: 93vh;
+    }
+
+    .hero{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .hero div{
+        width: 35%;
+    }
+
+    .hero div p{
+        font-size: large;
+    }
+
+    .cta-container{
+        width: 45% !important;
+    }
+}
+

@@ -2,6 +2,8 @@ import {Link, useLocation} from "react-router-dom";
 import ThemeIcon from "../theme-icon/ThemeIcon.jsx";
 import './Navbar.css'
 import {useState} from "react";
+import Bar from './Bar.jsx'
+import { FaSheetPlastic } from "react-icons/fa6";
 
 
 
@@ -9,7 +11,7 @@ function Navbar(){
     const [open, setOpen] = useState(false);
 
     const technologies = [
-        {'name':'C', 'directory' : 'c' , 'path':'c/basics' , 'icon':'c.svg' , 'color':'#283593'},
+        {'name':'C', 'directory' : 'c' , 'path':'c/basics' , 'icon':'c.svg' , 'color':'#3848A9'},
         {'name':'C++', 'directory' : 'cpp' , 'path':'cpp/basics' , 'icon':'cpp.svg' , 'color':'#0086D4'},
         {'name':'C#', 'directory' : 'csharp' , 'path':'csharp/basics' , 'icon':'csharp.svg' , 'color':'#5D3FD3'},
         {'name':'Docker', 'directory' : 'docker' , 'path':'docker/basics' , 'icon':'docker.svg' , 'color':'#00599C'},
@@ -53,10 +55,11 @@ function Navbar(){
 
     return(
         <nav>
-            {path ? <Link to={'/'}><img src={path} alt={'logo'} className={'logo'} /></Link> : <Link to={'/'} style={{color:'var(--default)',fontWeight:'bold' , fontSize:'larger'}}>Cheat Sheets</Link>}
+            {extractedLocation ? <Bar/> : ""}
+            {path ? <Link to={'/'}><img src={path} alt={'logo'} className={'logo'} /></Link> : <Link to={'/'} ><FaSheetPlastic  className={'favicon'}/></Link>}
             <div className='nav-left'>
                 <div className="dropdown" onClick={() => setOpen(!open)} onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(!open)}>
-                    <a href="javascript:void(0)">Cheat Sheets <span className='arrow'>{open ? "▲" : "▼"}</span></a>
+                    <p className={'hover'}>Cheat Sheets <span className='arrow'>{open ? "▲" : "▼"}</span></p>
                     <div className="dropdown-options">
                         {technologies.map((tech) => {
                             return (
@@ -65,7 +68,7 @@ function Navbar(){
                         })}
                     </div>
                 </div>
-                <a href='https://ko-fi.com/X8X511TO4J' target='_blank'><img height='32'  src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border={0} alt='Buy Me a Coffee at ko-fi.com' /></a>
+                <a className={'support'} href='https://ko-fi.com/X8X511TO4J' target='_blank'><img height='32'  src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border={0} alt='Buy Me a Coffee at ko-fi.com' /></a>
                 <ThemeIcon />
             </div>
         </nav>

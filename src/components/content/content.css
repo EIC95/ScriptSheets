@@ -1,18 +1,18 @@
 .content{
-    width: 60%;
+    width: 100%;
     border-left: solid 1px var(--accent);
     border-right: solid 1px var(--accent);
-    height: 90vh;
+    height: 95vh;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 28px 50px;
+    padding: 28px 15px;
     line-height: 1.8;
     word-spacing: 2px;
 }
 
 .content h1{
     margin-bottom: 25px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .content h2{
@@ -29,9 +29,22 @@
     align-items: center;
 }
 
-.content code{
+.content p code{
     color: var(--primary);
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.content li code{
+    color: var(--primary);
+    font-weight: bolder;
+    font-size: large;
+}
+
+.content tr code{
+    color: var(--primary);
+    font-weight: bolder;
+    font-size: large;
 }
 
 .content pre{
@@ -72,5 +85,25 @@ table{
 
 .underline{
     text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .content{
+        padding: 28px 50px;
+        height: 94vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content{
+        height: 91vh;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .content{
+        height: 93vh;
+    }
 }
 

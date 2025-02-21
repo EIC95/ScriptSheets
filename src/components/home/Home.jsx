@@ -38,8 +38,9 @@ function Home(){
                     })}
                 </div>
             </div>
+            <hr/>
             <footer>
-                <hr/>
+
                 <p style={{marginBottom : 10}}>Inspired by <a href='https://www.javascriptcheatsheet.org/' target='_blank' className='underline'>javascriptcheatsheet</a></p>
                 <p>Made with ❤️ by <a href='https://eic.codes' target='_blank' className='underline'>eic.codes</a></p>
             </footer>
