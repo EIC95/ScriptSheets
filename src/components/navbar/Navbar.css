@@ -24,10 +24,6 @@ nav{
     width: 70%;
 }
 
-.nav-left a{
-    height: 32px;
-}
-
 .logo{
     width: 32px;
     height: 32px;
@@ -41,6 +37,10 @@ nav{
 .dropdown {
     display: inline-block;
     position: relative;
+}
+
+.dropdown p{
+    color: var(--title);
 }
 
 .dropdown-options {
@@ -78,7 +78,10 @@ nav{
 
 @media (min-width: 768px) {
     .support{
-        display: block;
+        display: flex;
+        height: fit-content;
+        color: var(--title);
+        align-items: center;
     }
 
     .nav-left{

@@ -4,6 +4,7 @@ import './Navbar.css'
 import {useState} from "react";
 import Bar from './Bar.jsx'
 import { FaSheetPlastic } from "react-icons/fa6";
+import { PiCoffeeBold } from "react-icons/pi";
 
 
 
@@ -68,7 +69,7 @@ function Navbar(){
                         })}
                     </div>
                 </div>
-                <a className={'support'} href='https://ko-fi.com/X8X511TO4J' target='_blank'><img height='32'  src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border={0} alt='Buy Me a Coffee at ko-fi.com' /></a>
+                <a className={'support'} href='https://ko-fi.com/X8X511TO4J' target='_blank'><PiCoffeeBold style={{marginRight:5}}/> Buy me a coffee</a>
                 <ThemeIcon />
             </div>
         </nav>
