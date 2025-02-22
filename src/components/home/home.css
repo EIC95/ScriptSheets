@@ -72,7 +72,7 @@
 
 .cheatsheets-container a:hover{
     border: solid 1px var(--text);
-    color: var(--text);
+    color: var(--title);
 }
 
 footer{
