@@ -56,9 +56,9 @@ function Navbar(){
 
     return(
         <nav>
-            {extractedLocation ? <Bar/> : ""}
-            {path ? <Link to={'/'}><img src={path} alt={'logo'} className={'logo'} /></Link> : <Link to={'/'} ><FaSheetPlastic  className={'favicon'}/></Link>}
-            <div className='nav-left'>
+            <div className={'nav-left'}>
+                {extractedLocation ? <Bar/> : ""}
+                {path ? <Link to={'/'}><img src={path} alt={'logo'} className={'logo'} /></Link> : <Link to={'/'} ><FaSheetPlastic  className={'default-logo logo'}/></Link>}
                 <div className="dropdown" onClick={() => setOpen(!open)} onMouseEnter={() => setOpen(!open)} onMouseLeave={() => setOpen(!open)}>
                     <p className={'hover'}>Cheat Sheets <span className='arrow'>{open ? "▲" : "▼"}</span></p>
                     <div className="dropdown-options">
@@ -69,6 +69,8 @@ function Navbar(){
                         })}
                     </div>
                 </div>
+            </div>
+            <div className='nav-right'>
                 <a className={'support'} href='https://ko-fi.com/X8X511TO4J' target='_blank'><PiCoffeeBold style={{marginRight:5}}/> Buy me a coffee</a>
                 <ThemeIcon />
             </div>

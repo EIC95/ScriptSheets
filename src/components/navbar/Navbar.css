@@ -7,10 +7,13 @@ nav{
     box-shadow: var(--shadow);
 }
 
-.favicon{
-    width: 32px;
-    height: 32px;
+.bar{
+    margin-right: 10px;
+}
+
+.default-logo{
     color: var(--default);
+    width: 24px !important;
 }
 
 .support{
@@ -19,14 +22,20 @@ nav{
 
 .nav-left{
     display: flex;
+    align-items: center;
+}
+
+.nav-right{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 25%;
 }
 
 .logo{
     width: 32px;
     height: 32px;
+    margin-right: 10px;
 }
 
 .icon{
@@ -84,8 +93,8 @@ nav{
         align-items: center;
     }
 
-    .nav-left{
-        width: 75%;
+    .nav-right{
+        width: 35%;
     }
 
     .logo{
@@ -103,16 +112,16 @@ nav{
         display: none;
     }
 
-    .nav-left{
-        width: 40%;
+    .nav-right{
+        width: 25%;
     }
 
     nav{
         height: 9vh;
     }
 
-    .nav-left{
-        width: 35%;
+    .logo{
+        margin-right: 15px;
     }
 }
 
@@ -123,8 +132,8 @@ nav{
 }
 
 @media (min-width: 2560px) {
-    .nav-left{
-        width: 20%;
+    .nav-right{
+        width: 15%;
     }
 }
 

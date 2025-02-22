@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 body{
-    font-family: "Inter", serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
