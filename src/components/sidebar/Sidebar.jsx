@@ -15,7 +15,7 @@ function Sidebar(){
     }, [tech]);
 
     return(
-        <div className='sidebar animate__animated' id={'sidebar'}>
+        <div className='sidebar' id={'sidebar'}>
             <Markdown>{markdown}</Markdown>
         </div>
     )
