@@ -2,7 +2,7 @@
     width: 100%;
     border-left: solid 1px var(--accent);
     border-right: solid 1px var(--accent);
-    height: 95vh;
+    height: 94vh;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 28px 15px;
@@ -90,7 +90,7 @@ table{
 @media (min-width: 768px) {
     .content{
         padding: 28px 50px;
-        height: 94vh;
+        height: 93vh;
     }
 }
 

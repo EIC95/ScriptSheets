@@ -19,7 +19,7 @@ function Bar(){
     };
 
     return (
-        <FaBars className={'bar'} onClick={toggle}/>
+        <FaBars className={'bar'} size={22} onClick={toggle}/>
     )
 }
 

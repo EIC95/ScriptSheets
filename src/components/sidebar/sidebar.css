@@ -1,7 +1,7 @@
 .sidebar{
     width: 75%;
     overflow-y: auto;
-    height: 95vh;
+    height: 94vh;
     padding: 35px 35px;
     overflow-x: hidden;
     position: absolute;
@@ -35,7 +35,7 @@
 @media (min-width: 768px){
     .sidebar{
        width: 50%;
-        height: 94vh;
+        height: 93vh;
     }
 }
 

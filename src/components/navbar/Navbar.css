@@ -3,7 +3,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    height: 6vh;
     box-shadow: var(--shadow);
 }
 
@@ -91,7 +91,7 @@ nav{
     }
 
     nav{
-        height:6vh;
+        height:7vh;
     }
 }
 
