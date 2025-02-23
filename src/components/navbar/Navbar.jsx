@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ThemeIcon from "../theme-icon/ThemeIcon.jsx";
 import "./Navbar.css";
-import { useState, useMemo } from "react";
+import { useState, useMemo , useEffect } from "react";
 import Bar from "./Bar.jsx";
 import { PiCoffeeBold } from "react-icons/pi";
 
 function Navbar() {
     // State to handle the dropdown menu visibility
     const [open, setOpen] = useState(false);
+    const location = useLocation();
+    const [currentPath, setCurrentPath] = useState(location.pathname);
 
     // Using useMemo to optimize the technologies list so it doesn't get recalculated on every render
     const technologies = useMemo(() => [
@@ -27,8 +29,11 @@ function Navbar() {
     ], []);
 
     // Get the current location to determine the active section
+    useEffect(() => {
+        setCurrentPath(location.pathname);
+    }, [location.pathname]); // re-render every time location.pathname change otherwise icon and color won't change properly
     const regex = /\/([^/]+)\/([^/]+)/;
-    const match = location.pathname.match(regex);
+    const match = currentPath.match(regex);
     const extractedLocation = match ? match[1] : null;
     const extractedSubject = match ? match[2] : null;
 
