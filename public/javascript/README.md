@@ -1,4 +1,0 @@
-# Sommaire JavaScript
-
-
-- [Tableaux](tableaux)

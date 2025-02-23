@@ -18,6 +18,10 @@ nav {
     gap: 15px;
 }
 
+.icon{
+    color: var(--title);
+}
+
 /* Sidebar Toggle Button */
 .bar {
     cursor: pointer;
@@ -108,7 +112,8 @@ nav {
 }
 
 .support:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--accent);
+    color: var(--title);
 }
 
 /* LOGO */

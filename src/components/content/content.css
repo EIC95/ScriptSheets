@@ -34,10 +34,14 @@
 /* Styling for inline code inside paragraphs, lists, and tables */
 .content p code,
 .content li code,
-.content tr code {
+.content tr code,
+.content h3 code{
     color: var(--primary);
     font-weight: bolder;
-    font-size: large;
+    font-size: larger;
+    border-radius: 5px;
+    padding: 0 2px;
+    background-color: var(--snippet);
 }
 
 /* Code block styling */
@@ -70,6 +74,11 @@
 td {
     border-top: solid 1px var(--accent);
     padding: 5px;
+}
+
+th{
+    text-align: left;
+    color: var(--title);
 }
 
 table {

@@ -22,19 +22,19 @@ function ThemeIcon() {
             {theme === "light" ? (
                 <>
                     {/* Sun icon for light mode, click to switch */}
-                    <IoIosSunny onClick={toggleTheme} size={32} color="black" className={'hover icon'} />
+                    <IoIosSunny onClick={toggleTheme} size={32} className={'hover icon'} />
                     {/* GitHub icon */}
                     <a href='https://github.com/EIC95/CheatSheet.git' target={'_blank'}>
-                        <IoLogoGithub size={32} color="black" className={'hover icon'} />
+                        <IoLogoGithub size={32} className={'hover icon'} />
                     </a>
                 </>
             ) : (
                 <>
                     {/* Moon icon for dark mode, click to switch */}
-                    <FiMoon onClick={toggleTheme} color="white" size={32} className={'hover icon'} />
+                    <FiMoon onClick={toggleTheme} size={32} className={'hover icon'} />
                     {/* GitHub icon */}
                     <a href='https://github.com/EIC95/CheatSheet.git' target={'_blank'}>
-                        <IoLogoGithub size={32} color="white" className={'hover icon'} />
+                        <IoLogoGithub size={32} className={'hover icon'} />
                     </a>
                 </>
             )}
