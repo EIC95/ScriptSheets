@@ -41,7 +41,7 @@ function Home() {
                     </div>
                 </div>
                 {/* Illustration */}
-                <img src="/assets/Coder.svg" alt="Coder illustration" width={250} />
+                <img loading={'lazy'} src="/assets/Coder.svg" alt="Coder illustration" width={250} />
             </div>
 
             {/* Cheat Sheets section listing available technologies */}
