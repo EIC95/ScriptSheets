@@ -69,6 +69,22 @@ To add a new technology or topic, follow these steps:
     - Starts with the technology name (`# Technology`)
     - Contains an ordered list of topics so they appear properly in the sidebar
 
+#### 4.3 Adding a New Notes to the Sitemap
+
+To improve SEO and ensure that search engines index new technologies properly, each newly added language must be included in the `sitemap.xml` file.
+
+##### Steps to Update `sitemap.xml`
+
+1. Open the `public/sitemap.xml` file.
+2. Add a new `<url>` entry following this structure:
+
+```xml
+<url>
+    <loc>https://cheatsheets/technology-name/first-subject</loc>
+    <priority>0.8</priority>
+</url>
+```
+
 ### 5. Test Your Changes
 Run the project locally to verify that everything works correctly:
 ```sh

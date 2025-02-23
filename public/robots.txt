@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cheatsheets.eic.codes/sitemap.xml
