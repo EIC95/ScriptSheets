@@ -13,19 +13,19 @@ function Content() {
 
     // List of supported technologies with documentation links
     const technologies = [
-        { name: 'C Language', directoryTech: 'c', doc: 'https://en.cppreference.com/w/c', docSite: 'cppreference.com' },
-        { name: 'C++', directoryTech: 'cpp', doc: 'https://en.cppreference.com/w/cpp', docSite: 'cppreference.com' },
-        { name: 'C#', directoryTech: 'csharp', doc: 'https://learn.microsoft.com/en-us/dotnet/csharp/', docSite: 'microsoft.com' },
-        { name: 'Docker', directoryTech: 'docker', doc: 'https://docs.docker.com/', docSite: 'docker.com' },
-        { name: 'Express.Js', directoryTech: 'express', doc: 'https://expressjs.com/', docSite: 'expressjs.com' },
-        { name: 'Java', directoryTech: 'java', doc: 'https://docs.oracle.com/en/java/', docSite: 'oracle.com' },
-        { name: 'JavaScript', directoryTech: 'javascript', doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', docSite: 'MDN' },
-        { name: 'Node.Js', directoryTech: 'node', doc: 'https://nodejs.org/en/docs/', docSite: 'nodejs.org' },
-        { name: 'PHP', directoryTech: 'php', doc: 'https://www.php.net/docs.php', docSite: 'php.net' },
-        { name: 'Python', directoryTech: 'python', doc: 'https://docs.python.org/3/', docSite: 'python.org' },
-        { name: 'React', directoryTech: 'react', doc: 'https://react.dev/', docSite: 'React.dev' },
-        { name: 'SQL', directoryTech: 'sql', doc: 'https://www.w3schools.com/sql/', docSite: 'W3Schools' },
-        { name: 'MongoDB', directoryTech: 'mongodb', doc: 'https://www.mongodb.com/docs/', docSite: 'mongodb.com' }
+        { name: 'C Language', directory: 'c', doc: 'https://en.cppreference.com/w/c', docSite: 'cppreference.com' },
+        { name: 'C++', directory: 'cpp', doc: 'https://en.cppreference.com/w/cpp', docSite: 'cppreference.com' },
+        { name: 'C#', directory: 'csharp', doc: 'https://learn.microsoft.com/en-us/dotnet/csharp/', docSite: 'microsoft.com' },
+        { name: 'Docker', directory: 'docker', doc: 'https://docs.docker.com/', docSite: 'docker.com' },
+        { name: 'Express.Js', directory: 'express', doc: 'https://expressjs.com/', docSite: 'expressjs.com' },
+        { name: 'Java', directory: 'java', doc: 'https://docs.oracle.com/en/java/', docSite: 'oracle.com' },
+        { name: 'JavaScript', directory: 'javascript', doc: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', docSite: 'MDN' },
+        { name: 'Node.Js', directory: 'node', doc: 'https://nodejs.org/en/docs/', docSite: 'nodejs.org' },
+        { name: 'PHP', directory: 'php', doc: 'https://www.php.net/docs.php', docSite: 'php.net' },
+        { name: 'Python', directory: 'python', doc: 'https://docs.python.org/3/', docSite: 'python.org' },
+        { name: 'React', directory: 'react', doc: 'https://react.dev/', docSite: 'React.dev' },
+        { name: 'SQL', directory: 'sql', doc: 'https://www.w3schools.com/sql/', docSite: 'W3Schools' },
+        { name: 'MongoDB', directory: 'mongodb', doc: 'https://www.mongodb.com/docs/', docSite: 'mongodb.com' }
     ];
 
     let doc = '';
@@ -34,7 +34,7 @@ function Content() {
 
     // Finds the corresponding technology details based on the URL parameter
     for (const technology of technologies) {
-        if (technology.directoryTech === tech) {
+        if (technology.directory === tech) {
             doc = technology.doc;
             name = technology.name;
             website = technology.docSite;
