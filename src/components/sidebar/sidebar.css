@@ -1,58 +1,46 @@
-.sidebar{
+.sidebar {
     width: 75%;
-    overflow-y: auto;
+    overflow-y: auto; /* Allows vertical scrolling for content */
     height: 94vh;
     padding: 35px 35px;
     overflow-x: hidden;
     position: absolute;
     background-color: var(--background);
-    z-index: 100;
-    display: none;
-    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100; /* Ensures it stays above other elements */
+    display: none; /* Hidden by default, shown via media queries */
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
-.sidebar ul{
+.sidebar ul {
     list-style: none;
     padding-left: 0;
     margin-top: 25px;
-    border-left: 2px solid var(--accent);
+    border-left: 2px solid var(--accent); /* Left border for section separation */
 }
 
-.sidebar ul li{
+.sidebar ul li {
     margin-bottom: 15px;
-    width: fit-content;
+    width: fit-content; /* Adapts width to content */
 }
-.sidebar ul li a{
+
+.sidebar ul li a {
     line-height: 1.5;
     padding-left: 15px;
     display: inline-block;
 }
 
-.sidebar ul li a:hover{
-    border-left: solid 2px var(--primary);
+.sidebar ul li a:hover {
+    border-left: solid 2px var(--primary); /* Highlights active link */
 }
 
-@media (min-width: 768px){
-    .sidebar{
-       width: 50%;
-        height: 93vh;
-    }
-}
-
-@media (min-width: 1024px){
-    .sidebar{
-        display: block;
+@media (min-width: 1024px) {
+    .sidebar {
+        display: block; /* Becomes visible on larger screens */
         width: 20%;
-        box-shadow: none;
+        box-shadow: none; /* Removes shadow for a cleaner desktop layout */
         position: inherit;
         z-index: 0;
         height: 91vh;
-        background-color: inherit;
-    }
-}
-
-@media (min-width: 1440px) {
-    .sidebar{
-        height: 93vh;
+        background-color: inherit; /* Uses parent background */
     }
 }

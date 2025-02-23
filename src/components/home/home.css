@@ -1,4 +1,4 @@
-.home{
+.home {
     height: 94vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -7,6 +7,7 @@
     color: var(--title);
 }
 
+/* Hero section: vertically centered with reverse column direction for mobile */
 .hero {
     display: flex;
     flex-direction: column-reverse;
@@ -14,44 +15,48 @@
     justify-content: center;
 }
 
-.hero img{
+.hero img {
     align-self: center;
     margin-bottom: 15px;
 }
 
-.home h1{
+/* Main title styling */
+.home h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.hero div p{
+.hero div p {
     line-height: 1.5;
     word-spacing: 2px;
     margin-bottom: 1.5rem;
 }
 
-.cta-container a{
+/* Call-to-action (CTA) button styling */
+.cta-container a {
     background-color: var(--default);
     padding: 10px;
     color: white;
     border-radius: 8px;
 }
 
-.cta-container a:hover{
+.cta-container a:hover {
     color: white;
 }
 
-.cta-container{
+/* CTA container layout */
+.cta-container {
     display: flex;
     justify-content: space-around;
-
 }
 
-.home-title{
+/* Highlighted home title */
+.home-title {
     color: var(--default);
 }
 
-.cheatsheets-container{
+/* Cheatsheets grid container */
+.cheatsheets-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
@@ -59,7 +64,8 @@
     justify-content: center;
 }
 
-.cheatsheets-container a{
+/* Individual cheatsheet card */
+.cheatsheets-container a {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -70,43 +76,47 @@
     background-color: var(--accent);
 }
 
-.cheatsheets-container a:hover{
+.cheatsheets-container a:hover {
     border: solid 1px var(--text);
     color: var(--title);
 }
 
-footer{
+/* Footer spacing */
+footer {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-hr{
+hr {
     margin-top: 2rem;
 }
 
+/* Responsive styles */
 @media (min-width: 768px) {
-    .home{
+    .home {
         padding-left: 50px;
         padding-right: 50px;
         height: 93vh;
     }
 
-    .cta-container{
+    /* Adjust CTA alignment for larger screens */
+    .cta-container {
         justify-content: space-between;
         width: 40%;
     }
 
-    .hero img{
+    .hero img {
         margin-bottom: 50px;
     }
 }
 
 @media (min-width: 1024px) {
-    .home{
+    .home {
         height: 91vh;
     }
 
-    .hero{
+    /* Switch hero section to row layout for desktops */
+    .hero {
         padding-bottom: 0;
         flex-direction: inherit;
         align-items: center;
@@ -114,31 +124,31 @@ hr{
         width: 100%;
     }
 
-    .hero div{
+    .hero div {
         width: 45%;
     }
 }
 
 @media (min-width: 1440px) {
-    .home{
+    .home {
         height: 93vh;
     }
 
-    .hero{
+    /* Add more padding for extra-large screens */
+    .hero {
         padding-left: 100px;
         padding-right: 100px;
     }
 
-    .hero div{
+    .hero div {
         width: 35%;
     }
 
-    .hero div p{
+    .hero div p {
         font-size: large;
     }
 
-    .cta-container{
+    .cta-container {
         width: 45% !important;
     }
 }
-

@@ -2,30 +2,30 @@
     --background: #fefefe;
     --accent: #E4E4E7;
     --text: #505050;
-    --title: #000000;
+    --title: #000000; /* Used for highlighted text and the home page */
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 [data-theme="dark"] {
-    --background: #18181B ;
-    --accent: #424242  ;
-    --text: #bdbdbd ;
-    --title:#ffffff;
+    --background: #18181B;
+    --accent: #424242;
+    --text: #bdbdbd;
+    --title: #ffffff;
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-:root{
-    --primary: var(--default);
+:root {
+    --primary: var(--default); /* Used as the tech color - set in the Navbar component */
     --default: #1242a8;
-    --code:#0D1117;
-    --codeInverted: #FFFFFF;
+    --code: #0D1117; /* Background color for <pre> and <code> tags */
+    --codeInverted: #FFFFFF; /* Ensures code text is visible in light mode, since --text would blend into the background */
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-    color: var(--title);
+    color: var(--title); /* Highlights all titles for better visibility */
 }
 
-body{
+body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -34,7 +34,7 @@ body{
     color: var(--text);
     margin: 0;
     scroll-behavior: smooth;
-    overflow-y: hidden;
+    overflow-y: hidden; /* Disables body scrollbar since sidebar, content and rightbar have their own */
 }
 
 * {
@@ -42,18 +42,17 @@ body{
     box-sizing: border-box;
 }
 
-
-.hover:hover{
+.hover:hover {
     color: var(--primary);
     cursor: pointer;
 }
 
-.Link, a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-.Link:hover, a:hover{
+a:hover {
     color: var(--primary);
     cursor: pointer;
 }

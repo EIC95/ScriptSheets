@@ -1,109 +1,105 @@
-.content{
+.content {
     width: 100%;
     border-left: solid 1px var(--accent);
     border-right: solid 1px var(--accent);
     height: 94vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
     padding: 28px 15px;
     line-height: 1.8;
     word-spacing: 2px;
 }
 
-.content h1{
+/* Styling for headings */
+.content h1 {
     margin-bottom: 25px;
     font-size: 40px;
 }
 
-.content h2{
+.content h2 {
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
-.content div{
+.content div {
     margin-top: 15px;
 }
 
-.edit{
+/* Edit section layout */
+.edit {
     display: flex;
     align-items: center;
 }
 
-.content p code{
+/* Styling for inline code inside paragraphs, lists, and tables */
+.content p code,
+.content li code,
+.content tr code {
     color: var(--primary);
     font-weight: bolder;
     font-size: large;
 }
 
-.content li code{
-    color: var(--primary);
-    font-weight: bolder;
-    font-size: large;
-}
-
-.content tr code{
-    color: var(--primary);
-    font-weight: bolder;
-    font-size: large;
-}
-
-.content pre{
+/* Code block styling */
+.content pre {
     background-color: var(--code);
     border-radius: 10px;
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
-    overflow-x: auto;
+    overflow-x: auto; /* Enables horizontal scrolling for long code */
 }
 
-.content pre::-webkit-scrollbar{
+/* Custom scrollbar for code blocks */
+.content pre::-webkit-scrollbar {
     height: 7px;
 }
 
-.content pre::-webkit-scrollbar-track{
+.content pre::-webkit-scrollbar-track {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.content pre code{
+.content pre code {
     color: var(--codeInverted);
     font-weight: inherit;
     background-color: var(--code);
 }
 
-td{
+/* Table styling */
+td {
     border-top: solid 1px var(--accent);
     padding: 5px;
 }
 
-table{
+table {
     border-collapse: collapse;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
 }
 
-.underline{
+.underline {
     text-decoration: underline;
 }
 
+/* Responsive adjustments */
 @media (min-width: 768px) {
-    .content{
+    .content {
         padding: 28px 50px;
         height: 93vh;
     }
 }
 
 @media (min-width: 1024px) {
-    .content{
+    .content {
         height: 91vh;
         width: 60%;
     }
 }
 
 @media (min-width: 1440px) {
-    .content{
+    .content {
         height: 93vh;
     }
 }
-

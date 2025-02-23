@@ -1,17 +1,19 @@
-.main-body{
-    display: flex;
+.main-body {
+    display: flex; /* Arranges sidebar, content, and rightbar in a row */
 }
+
+/* Custom scrollbar styles (only for WebKit browsers), Firefox not supported */
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 7px; /* Sets scrollbar width */
 }
 
-/* Track */
+/* Scrollbar track (background) */
 ::-webkit-scrollbar-track {
     background-color: var(--accent);
 }
 
-/* Handle */
+/* Scrollbar handle */
 ::-webkit-scrollbar-thumb {
     background: var(--text);
 }
