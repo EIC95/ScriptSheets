@@ -16,7 +16,7 @@
 
 :root {
     --primary: var(--default); /* Used as the tech color - set in the Navbar component */
-    --default: #1242a8;
+    --default: #5E17EB;
     --code: #0D1117; /* Background color for <pre> and <code> tags */
     --codeInverted: #FFFFFF; /* Ensures code text is visible in light mode, since --text would blend into the background */
 }

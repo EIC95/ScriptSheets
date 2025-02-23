@@ -1,12 +1,12 @@
-# Contributing to CheatSheets
+# Contributing to ScriptSheets
 
-Thank you for your interest in contributing to CheatSheets! We welcome contributions from everyone, whether it's fixing a typo, adding new content, or improving the structure of the project.
+Thank you for your interest in contributing to ScriptSheets! We welcome contributions from everyone, whether it's fixing a typo, adding new content, or improving the structure of the project.
 
 ## How to Contribute
 
 ### 1. Fork the Repository
 First, fork the repository to your own GitHub account:
-- Navigate to the [CheatSheets repository](https://github.com/EIC95/CheatSheet.git)
+- Navigate to the [ScriptSheets repository](https://github.com/EIC95/CheatSheet.git)
 - Click the **Fork** button in the top-right corner
 
 ### 2. Clone the Repository
@@ -80,7 +80,7 @@ To improve SEO and ensure that search engines index new technologies properly, e
 
 ```xml
 <url>
-    <loc>https://cheatsheets/technology-name/first-subject</loc>
+    <loc>https://scriptsheets.eic.codes/technology-name/first-subject</loc>
     <priority>0.8</priority>
 </url>
 ```

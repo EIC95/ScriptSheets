@@ -1,6 +1,6 @@
-# CheatSheets - Cheat Sheet for Developers
+# ScriptSheets - Cheat Sheet for Developers
 
-CheatSheets is an open-source project that provides a structured collection of notes and cheat sheets for various programming languages and technologies. It helps developers quickly access key concepts, syntax, and examples.
+ScriptSheets is an open-source project that provides a structured collection of notes and cheat sheets for various programming languages and technologies. It helps developers quickly access key concepts, syntax, and examples.
 
 ## Features
 - 📌 Notes and cheat sheets for multiple programming languages and frameworks.

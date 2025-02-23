@@ -1,58 +1,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://cheatsheets.eic.codes/</loc>
+        <loc>https://scriptsheets.eic.codes/</loc>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/c/basics</loc>
+        <loc>https://scriptsheets.eic.codes/c/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/cpp/basics</loc>
+        <loc>https://scriptsheets.eic.codes/cpp/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/csharp/basics</loc>
+        <loc>https://scriptsheets.eic.codes/csharp/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/docker/basics</loc>
+        <loc>https://scriptsheets.eic.codes/docker/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/express/basics</loc>
+        <loc>https://scriptsheets.eic.codes/express/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/java/basics</loc>
+        <loc>https://scriptsheets.eic.codes/java/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/javascript/basics</loc>
+        <loc>https://scriptsheets.eic.codes/javascript/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/node/basics</loc>
+        <loc>https://scriptsheets.eic.codes/node/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/php/basics</loc>
+        <loc>https://scriptsheets.eic.codes/php/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/python/basics</loc>
+        <loc>https://scriptsheets.eic.codes/python/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/react/basics</loc>
+        <loc>https://scriptsheets.eic.codes/react/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/sql/basics</loc>
+        <loc>https://scriptsheets.eic.codes/sql/basics</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://cheatsheets.eic.codes/mongodb/basics</loc>
+        <loc>https://scriptsheets.eic.codes/mongodb/basics</loc>
         <priority>0.8</priority>
     </url>
 </urlset>

@@ -3,7 +3,6 @@ import ThemeIcon from "../theme-icon/ThemeIcon.jsx";
 import "./Navbar.css";
 import { useState, useMemo } from "react";
 import Bar from "./Bar.jsx";
-import { FaSheetPlastic } from "react-icons/fa6";
 import { PiCoffeeBold } from "react-icons/pi";
 
 function Navbar() {
@@ -42,8 +41,9 @@ function Navbar() {
     const titleElement = document.getElementsByTagName("title")[0];
     titleElement.text = "Cheat Sheets";
 
-    let iconPath = null;
+    let iconPath = 'assets/logo.png';
     const root = document.querySelector(":root");
+    root.style.setProperty("--primary", null); // set the to the default color on each render
 
     // Find the corresponding technology and update the page title and theme color
     if (extractedLocation) {
@@ -63,7 +63,7 @@ function Navbar() {
 
                 {/* Show technology logo if available, otherwise default logo */}
                 <Link to="/">
-                    {iconPath ? <img src={iconPath} alt="logo" className="logo" /> : <FaSheetPlastic className="default-logo logo" />}
+                    <img src={iconPath} alt="logo" className="logo" />
                 </Link>
 
                 {/* Dropdown menu for cheat sheets */}
