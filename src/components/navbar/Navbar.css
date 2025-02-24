@@ -114,6 +114,8 @@ nav {
 .support:hover {
     background: var(--accent);
     color: var(--title);
+    transform: scale(1.1);
+    animation: All 0.2s ease;
 }
 
 /* LOGO */
