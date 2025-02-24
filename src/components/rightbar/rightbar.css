@@ -2,8 +2,7 @@
     width: 20%;
     height: 91vh;
     overflow-y: auto; /* Active le défilement vertical si nécessaire */
-    padding-top: 50px;
-    padding-left: 25px;
+    padding: 50px 25px;
     display: none; /* Caché par défaut sur les petits écrans */
 }
 

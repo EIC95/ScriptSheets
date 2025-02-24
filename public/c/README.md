@@ -1,7 +1,7 @@
 # C Language
 
 - [Basics](basics)  
-- [Type Casting](casting)
+- [Type Casting](type_casting)
 - [Mathematics](mathematics)
 - [Control Structures](control_structures)
 - [Functions](functions)  
