@@ -39,7 +39,7 @@ function Navbar() {
 
     // Extract the subject name from the URL and format it properly
     const subject = extractedSubject
-        ? extractedSubject.charAt(0).toUpperCase() + extractedSubject.slice(1).toLowerCase()
+        ? (extractedSubject.charAt(0).toUpperCase() + extractedSubject.slice(1).toLowerCase()).replaceAll('_' , ' ')
         : "";
 
     // Set default page title
