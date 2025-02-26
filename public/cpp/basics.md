@@ -1,6 +1,6 @@
 # Basics
 
-## Introduction to C++  
+## Introduction to C++
 C++ is a powerful programming language derived from C that supports multiple programming paradigms, including:  
 - **Procedural programming**: Based on functions and control structures.  
 - **Object-oriented programming (OOP)**: Based on classes and objects.  
@@ -8,7 +8,7 @@ C++ is a powerful programming language derived from C that supports multiple pro
 
 C++ is widely used in software development, game development, finance, embedded systems, and artificial intelligence.  
 
-## Basic C++ Program  
+## Basic C++ Program
 Every C++ program must contain a `main()` function, which serves as the entry point of the program.  
 
 ```cpp
