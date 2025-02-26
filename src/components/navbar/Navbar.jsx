@@ -19,7 +19,7 @@ function Navbar() {
         { name: "Docker", directory: "docker", path: "docker/basics", icon: "docker.svg", color: "#00599C" },
         { name: "Express.Js", directory: "express", path: "express/basics", icon: "express.svg", color: "#6cc24a" },
         { name: "Java", directory: "java", path: "java/basics", icon: "java.svg", color: "#D43A02" },
-        { name: "JavaScript", directory: "javascript", path: "javascript/basics", icon: "javascript.svg", color: "#FFBF00" },
+        { name: "JavaScript", directory: "javascript", path: "javascript/basics", icon: "javascript.svg", color: "#dca702" },
         { name: "Node.Js", directory: "node", path: "node/basics", icon: "node.svg", color: "#6cc24a" },
         { name: "PHP", directory: "php", path: "php/basics", icon: "php.svg", color: "#5D3FD3" },
         { name: "Python", directory: "python", path: "python/basics", icon: "python.svg", color: "#FFBF00" },
