@@ -4,16 +4,16 @@
     --text: #505050;
     --title: #000000; /* Used for highlighted text and the home page */
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    --snippet: #E4E4E7;
+    --snippet: #e5e7e9;
 }
 
 [data-theme="dark"] {
-    --background: #18181B;
+    --background:#18181B;
     --accent: #424242;
     --text: #bdbdbd;
     --title: #ffffff;
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    --snippet: #bebebe;
+    --snippet: #566573 ;
 }
 
 :root {
