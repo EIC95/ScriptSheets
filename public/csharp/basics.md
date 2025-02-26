@@ -1,6 +1,6 @@
 # Basics
 
-## Introduction to C#  
+## Introduction to C#
 C# is a modern, object-oriented programming language developed by Microsoft. It supports multiple programming paradigms, including:  
 - **Object-oriented programming (OOP)**: Based on classes and objects.  
 - **Functional programming**: Supports lambda expressions and LINQ.  
@@ -8,7 +8,7 @@ C# is a modern, object-oriented programming language developed by Microsoft. It 
 
 C# is widely used for desktop applications, web applications, game development (Unity), and enterprise software.
 
-## Basic C# Program  
+## Basic C# Program
 Every C# program must contain a `Main()` method, which serves as the entry point of the program.  
 
 ```csharp
@@ -29,7 +29,7 @@ class Program
 - `static void Main()`: The main entry point of the application.
 - `Console.WriteLine()`: Prints text to the console.
 
-## Variables and Data Types  
+## Variables and Data Types
 C# is statically typed, meaning variables must be declared with a type.  
 
 | Type     | Description                 | Example          |
@@ -49,7 +49,7 @@ bool isActive = true;
 string name = "John";
 ```
 
-## Operators  
+## Operators
 Operators allow performing operations on variables and values.  
 
 ### Arithmetic Operators  
@@ -109,7 +109,7 @@ x += 2;  // x is now 7
 ```
 
 
-## Comments  
+## Comments
 Comments help explain the code.  
 
 ```csharp
