@@ -11,7 +11,7 @@ function Home() {
         { name: 'C', path: 'c/basics', icon: 'c.svg' },
         { name: 'C++', path: 'cpp/basics', icon: 'cpp.svg' },
         { name: 'C#', path: 'csharp/basics', icon: 'csharp.svg' },
-        { name: 'Docker', path: 'docker/basics', icon: 'docker.svg' },
+        { name: 'Docker', path: 'docker/introduction', icon: 'docker.svg' },
         { name: 'Express.Js', path: 'express/basics', icon: 'express.svg' },
         { name: 'Java', path: 'java/basics', icon: 'java.svg' },
         { name: 'JavaScript', path: 'javascript/basics', icon: 'javascript.svg' },
