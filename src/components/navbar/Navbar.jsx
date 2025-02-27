@@ -16,7 +16,7 @@ function Navbar() {
         { name: "C", directory: "c", path: "c/basics", icon: "c.svg", color: "#3848A9" },
         { name: "C++", directory: "cpp", path: "cpp/basics", icon: "cpp.svg", color: "#0086D4" },
         { name: "C#", directory: "csharp", path: "csharp/basics", icon: "csharp.svg", color: "#5D3FD3" },
-        { name: "Docker", directory: "docker", path: "docker/basics", icon: "docker.svg", color: "#00599C" },
+        { name: "Docker", directory: "docker", path: "docker/introduction", icon: "docker.svg", color: "#00599C" },
         { name: "Express.Js", directory: "express", path: "express/basics", icon: "express.svg", color: "#6cc24a" },
         { name: "Java", directory: "java", path: "java/basics", icon: "java.svg", color: "#D43A02" },
         { name: "JavaScript", directory: "javascript", path: "javascript/basics", icon: "javascript.svg", color: "#FFBF00" },
