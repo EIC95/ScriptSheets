@@ -8,6 +8,7 @@
 - [Methods](methods)
 - [Packages](packages)
 - [Scanner Class](scanner)
+- [Object-Oriented programming](object_oriented_programming)
 - [Date & Time](date_time)
 - [ArrayList](arraylist)
 - [LinkedList](linkedlist)
