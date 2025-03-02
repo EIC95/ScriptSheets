@@ -58,7 +58,7 @@ function Content() {
             <hr />
             <div>
                 <p>{`Learn more about ${name} on `}<a className='underline' href={doc} target='_blank'>{website}</a></p>
-                <a className='edit' href='https://github.com/EIC95/CheatSheet.git' target='_blank'>
+                <a className='edit' href='https://github.com/EIC95/ScriptSheets' target='_blank'>
                     <CiEdit style={{ marginRight: '5px' }} /> Edit this page on GitHub
                 </a>
                 <p>Inspired by <a href='https://www.javascriptcheatsheet.org/' target='_blank' className='underline'>JavaScript Cheat Sheet</a></p>

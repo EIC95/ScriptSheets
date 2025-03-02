@@ -24,7 +24,7 @@ function ThemeIcon() {
                     {/* Sun icon for light mode, click to switch */}
                     <IoIosSunny onClick={toggleTheme} size={32} className={'hover icon'} />
                     {/* GitHub icon */}
-                    <a href='https://github.com/EIC95/CheatSheet.git' target={'_blank'}>
+                    <a href='https://github.com/EIC95/ScriptSheets' target={'_blank'}>
                         <IoLogoGithub size={32} className={'hover icon'} />
                     </a>
                 </>

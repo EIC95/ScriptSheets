@@ -5,7 +5,7 @@ import { HiArrowRight } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 
 // GitHub repository link (used in multiple places)
-const GITHUB_REPO = "https://github.com/EIC95/CheatSheet.git";
+const GITHUB_REPO = "https://github.com/EIC95/ScriptSheets";
 
 function Home() {
     // useMemo ensures that the technologies array is created only once
