@@ -114,13 +114,15 @@ a:hover {
 }
 
 .home-title {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
     background: linear-gradient(120deg, var(--title), var(--primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 800;
+    letter-spacing: -0.02em;
 }
 
 .hero p {
@@ -293,7 +295,7 @@ a:hover {
     }
 
     .home-title {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .hero p {
@@ -317,7 +319,7 @@ a:hover {
     }
 
     .home-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .cta-container {
