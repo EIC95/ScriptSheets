@@ -1,0 +1,20 @@
+# Python
+
+- [Basics](basics)
+- [Strings](strings)
+- [Mathematics](mathematics)
+- [Control Structures](control_structures)
+- [Lists](lists)
+- [Tuples](tuples)
+- [Sets](sets)
+- [Dictionaries](dictionaries)
+- [Functions](functions)
+- [Object-Oriented Programming](oop)
+- [Modules](modules)
+- [Dates](dates)
+- [JSON](json)
+- [Regular Expressions](regex)
+- [Package Management (pip)](pip)
+- [Exception Handling](exceptions)
+- [File Handling](files)
+
