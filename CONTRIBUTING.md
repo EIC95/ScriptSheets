@@ -68,6 +68,7 @@ To add a new technology or topic, follow these steps:
 - `README.md` in each technology folder:
     - Starts with the technology name (`# Technology`)
     - Contains an ordered list of topics so they appear properly in the sidebar
+    - The file names has to be the same as the topic or an alternative name separated by '_'
 
 #### 4.3 Adding a New Notes to the Sitemap
 

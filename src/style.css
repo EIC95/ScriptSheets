@@ -5,23 +5,17 @@
     --text-secondary: #71717A;
     --title: #18181B;
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    --snippet: #E4E4E7;
-    --primary-transparent: rgba(94, 23, 235, 0.1);
-    --gradient-start: #18181B;
-    --gradient-end: #5E17EB;
+    --snippet: #e5e7e9;
 }
 
 [data-theme="dark"] {
-    --background: #18181B;
+    --background:#18181B;
     --accent: #424242;
     --text: #bdbdbd;
     --text-secondary: #A1A1AA;
     --title: #ffffff;
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    --snippet: #bebebe;
-    --primary-transparent: rgba(94, 23, 235, 0.15);
-    --gradient-start: #ffffff;
-    --gradient-end: #5E17EB;
+    --snippet: #566573 ;
 }
 
 :root {

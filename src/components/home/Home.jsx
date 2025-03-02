@@ -13,14 +13,14 @@ function Home() {
         { name: 'C', path: 'c/basics', icon: 'c.svg' },
         { name: 'C++', path: 'cpp/basics', icon: 'cpp.svg' },
         { name: 'C#', path: 'csharp/basics', icon: 'csharp.svg' },
-        { name: 'Docker', path: 'docker/basics', icon: 'docker.svg' },
+        { name: 'Docker', path: 'docker/introduction', icon: 'docker.svg' },
         { name: 'Express.Js', path: 'express/basics', icon: 'express.svg' },
         { name: 'Java', path: 'java/basics', icon: 'java.svg' },
         { name: 'JavaScript', path: 'javascript/basics', icon: 'javascript.svg' },
-        { name: 'Node.Js', path: 'node/basics', icon: 'node.svg' },
+        { name: 'Node.Js', path: 'node/modules', icon: 'node.svg' },
         { name: 'PHP', path: 'php/basics', icon: 'php.svg' },
         { name: 'Python', path: 'python/basics', icon: 'python.svg' },
-        { name: 'React', path: 'react/basics', icon: 'react.svg' },
+        { name: 'React', path: 'react/introduction', icon: 'react.svg' },
         { name: 'SQL', path: 'sql/basics', icon: 'sql.svg' },
         { name: 'MongoDB', path: 'mongodb/basics', icon: 'mongodb.svg' }
     ], []); // Empty dependency array ensures it is created only once

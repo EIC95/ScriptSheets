@@ -16,14 +16,14 @@ function Navbar() {
         { name: "C", directory: "c", path: "c/basics", icon: "c.svg", color: "#3848A9" },
         { name: "C++", directory: "cpp", path: "cpp/basics", icon: "cpp.svg", color: "#0086D4" },
         { name: "C#", directory: "csharp", path: "csharp/basics", icon: "csharp.svg", color: "#5D3FD3" },
-        { name: "Docker", directory: "docker", path: "docker/basics", icon: "docker.svg", color: "#00599C" },
+        { name: "Docker", directory: "docker", path: "docker/introduction", icon: "docker.svg", color: "#00599C" },
         { name: "Express.Js", directory: "express", path: "express/basics", icon: "express.svg", color: "#6cc24a" },
         { name: "Java", directory: "java", path: "java/basics", icon: "java.svg", color: "#D43A02" },
         { name: "JavaScript", directory: "javascript", path: "javascript/basics", icon: "javascript.svg", color: "#FFBF00" },
-        { name: "Node.Js", directory: "node", path: "node/basics", icon: "node.svg", color: "#6cc24a" },
+        { name: "Node.Js", directory: "node", path: "node/modules", icon: "node.svg", color: "#6cc24a" },
         { name: "PHP", directory: "php", path: "php/basics", icon: "php.svg", color: "#5D3FD3" },
         { name: "Python", directory: "python", path: "python/basics", icon: "python.svg", color: "#FFBF00" },
-        { name: "React", directory: "react", path: "react/basics", icon: "react.svg", color: "#61DBFB" },
+        { name: "React", directory: "react", path: "react/introduction", icon: "react.svg", color: "#61DBFB" },
         { name: "SQL", directory: "sql", path: "sql/basics", icon: "sql.svg", color: "#61DBFB" },
         { name: "MongoDB", directory: "mongodb", path: "mongodb/basics", icon: "mongodb.svg", color: "#00684A" },
     ], []);
@@ -39,7 +39,7 @@ function Navbar() {
 
     // Extract the subject name from the URL and format it properly
     const subject = extractedSubject
-        ? extractedSubject.charAt(0).toUpperCase() + extractedSubject.slice(1).toLowerCase()
+        ? (extractedSubject.charAt(0).toUpperCase() + extractedSubject.slice(1).toLowerCase()).replaceAll('_' , ' ')
         : "";
 
     // Set default page title
