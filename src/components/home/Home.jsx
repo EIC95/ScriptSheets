@@ -34,7 +34,7 @@ function Home() {
                     <p>
                         Working with multiple technologies is great…but it can also be a real headache.
                         Syntax can get mixed up, and it&#39;s easy to forget how to do certain things.
-                        That's why these notes exist—to help everyone stay on track.
+                        That&#39;s why these notes exist—to help everyone stay on track.
                         After all, no one can remember everything!
                     </p>
                     <div className="cta-container">
