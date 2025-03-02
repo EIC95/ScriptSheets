@@ -1,6 +1,8 @@
 import './home.css';
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
+import { HiArrowRight } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
 
 // GitHub repository link (used in multiple places)
 const GITHUB_REPO = "https://github.com/EIC95/CheatSheet.git";
@@ -32,12 +34,22 @@ function Home() {
                     <p>
                         Working with multiple technologies is great…but it can also be a real headache.
                         Syntax can get mixed up, and it&#39;s easy to forget how to do certain things.
-                        That’s why these notes exist—to help everyone stay on track.
+                        That's why these notes exist—to help everyone stay on track.
                         After all, no one can remember everything!
                     </p>
                     <div className="cta-container">
-                        <a href="#cheatsheets">Getting started</a>
-                        <a target="_blank" rel="noopener noreferrer" href={GITHUB_REPO}>Contribute</a>
+                        <a href="#cheatsheets">
+                            <span>
+                                Getting Started
+                                <HiArrowRight />
+                            </span>
+                        </a>
+                        <a href={GITHUB_REPO} target="_blank" rel="noopener noreferrer">
+                            <span>
+                                <FaGithub />
+                                Contribute
+                            </span>
+                        </a>
                     </div>
                 </div>
                 {/* Illustration */}
@@ -50,9 +62,14 @@ function Home() {
                 <div className="cheatsheets-container">
                     {technologies.map((tech) => (
                         <Link key={tech.name} to={tech.path}>
-                            {/* Each tech card includes an icon and name */}
-                            <img src={`/assets/${tech.icon}`} width={76} height={76} alt={`${tech.name} icon`} />
-                            {tech.name}
+                            <img 
+                                src={`/assets/${tech.icon}`} 
+                                width={76} 
+                                height={76} 
+                                alt={`${tech.name} icon`}
+                                loading="lazy"
+                            />
+                            <span>{tech.name}</span>
                         </Link>
                     ))}
                 </div>
@@ -62,10 +79,26 @@ function Home() {
             <hr />
             <footer>
                 <p style={{ marginBottom: 10 }}>
-                    Inspired by <a href="https://www.javascriptcheatsheet.org/" target="_blank" rel="noopener noreferrer" className="underline">javascriptcheatsheet</a>
+                    Inspired by{" "}
+                    <a 
+                        href="https://www.javascriptcheatsheet.org/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="underline"
+                    >
+                        javascriptcheatsheet
+                    </a>
                 </p>
                 <p>
-                    Made with ❤️ by <a href="https://eic.codes" target="_blank" rel="noopener noreferrer" className="underline">eic.codes</a>
+                    Made with ❤️ by{" "}
+                    <a 
+                        href="https://eic.codes" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="underline"
+                    >
+                        eic.codes
+                    </a>
                 </p>
             </footer>
         </section>
