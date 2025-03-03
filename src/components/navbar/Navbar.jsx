@@ -84,7 +84,7 @@ function Navbar() {
                     </p>
                     <div className="dropdown-options">
                         {technologies.map((tech) => (
-                            <Link key={tech.name} className="Link" to={tech.path}>
+                            <Link key={tech.name} to={tech.path}>
                                 {tech.name}
                             </Link>
                         ))}
