@@ -47,27 +47,31 @@
 /* Code block styling */
 .content pre {
     background-color: var(--code);
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 8px;
     margin-top: 20px;
     margin-bottom: 20px;
-    overflow-x: auto; /* Enables horizontal scrolling for long code */
-}
-
-/* Custom scrollbar for code blocks */
-.content pre::-webkit-scrollbar {
-    height: 7px;
-}
-
-.content pre::-webkit-scrollbar-track {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .content pre code {
     color: var(--codeInverted);
     font-weight: inherit;
     background-color: var(--code);
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+.content pre code::-webkit-scrollbar{
+    height: 7px;
+}
+
+.content pre code::-webkit-scrollbar-track{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.content pre code::-webkit-scrollbar-thumb{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* Table styling */
