@@ -27,7 +27,7 @@ function Sidebar() {
                 break;
             }
         }
-    }, [markdown,subject]);
+    }, [markdown]);
 
     return (
         <div className='sidebar' id='sidebar'>
