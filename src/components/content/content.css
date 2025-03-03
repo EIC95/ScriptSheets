@@ -41,21 +41,20 @@
     font-size: larger;
     border-radius: 5px;
     padding: 0 2px;
-    background-color: var(--snippet);
 }
 
 /* Code block styling */
 .content pre {
-    background-color: var(--code);
+    background-color: var(--codeBackground);
     border-radius: 8px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .content pre code {
-    color: var(--codeInverted);
+    color: var(--codeText);
     font-weight: inherit;
-    background-color: var(--code);
+    background-color: var(--codeBackground);
     overflow-x: auto;
     border-radius: 8px;
 }

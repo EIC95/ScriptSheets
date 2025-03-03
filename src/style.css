@@ -5,7 +5,6 @@
     --text-secondary: #71717A;
     --title: #18181B;
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    --snippet: #e5e7e9;
 }
 
 [data-theme="dark"] {
@@ -15,7 +14,6 @@
     --text-secondary: #A1A1AA;
     --title: #ffffff;
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    --snippet: #566573 ;
 }
 
 :root {
@@ -23,8 +21,8 @@
     --default: #5E17EB;
     --primary-dark: #4c12c3;
     --primary-light: #7039ef;
-    --code: #0D1117;
-    --codeInverted: #FFFFFF;
+    --codeBackground: #0D1117;
+    --codeText: #FFFFFF;
     
     /* Spacing */
     --space-xs: 0.25rem;
