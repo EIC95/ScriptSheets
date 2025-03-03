@@ -1,4 +1,4 @@
-# C Language
+# C
 
 - [Basics](basics)  
 - [Type Casting](type_casting)

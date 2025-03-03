@@ -1,4 +1,4 @@
-# Git Summary
+# Git
 
 - [Getting Started](getting_started)
 - [Git Configuration](configuration)

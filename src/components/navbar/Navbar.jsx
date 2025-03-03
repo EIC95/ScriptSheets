@@ -33,19 +33,10 @@ function Navbar() {
     useEffect(() => {
         setCurrentPath(location.pathname);
     }, [location.pathname]); // re-render every time location.pathname change otherwise icon and color won't change properly
+
     const regex = /\/([^/]+)\/([^/]+)/;
     const match = currentPath.match(regex);
     const extractedLocation = match ? match[1] : null;
-    const extractedSubject = match ? match[2] : null;
-
-    // Extract the subject name from the URL and format it properly
-    const subject = extractedSubject
-        ? (extractedSubject.charAt(0).toUpperCase() + extractedSubject.slice(1).toLowerCase()).replaceAll('_' , ' ')
-        : "";
-
-    // Set default page title
-    const titleElement = document.getElementsByTagName("title")[0];
-    titleElement.text = "Cheat Sheets";
 
     let iconPath = 'assets/logo.png';
     const root = document.querySelector(":root");
@@ -55,7 +46,6 @@ function Navbar() {
     if (extractedLocation) {
         const tech = technologies.find((t) => t.directory === extractedLocation);
         if (tech) {
-            titleElement.text = `${tech.name} - ${subject}`;
             root.style.setProperty("--primary", tech.color);
             iconPath = `/assets/${tech.icon}`;
         }

@@ -16,16 +16,17 @@ function Sidebar() {
             .then((text) => setMarkdown(text));
     }, [tech]); // Runs whenever the "tech" parameter changes
 
-    //Highlight link based on the page
+    //Highlight link based on the page and set page title
     useEffect(() => {
         const links = document.querySelectorAll('#sidebar ul li a');
-        links.forEach((link)=> {
+        for(const link of links) {
             if(link.getAttribute('href') === subject){
                 link.style.color = 'var(--primary)';
                 link.style.borderLeft = 'solid 2px var(--primary)'
+                document.title = document.querySelectorAll('#sidebar h1')[0].textContent + " - " + link.textContent
+                break;
             }
-        });
-
+        }
     }, [markdown,subject]);
 
     return (
