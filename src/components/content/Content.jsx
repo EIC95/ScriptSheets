@@ -25,7 +25,8 @@ function Content() {
         { name: 'Python', directory: 'python', doc: 'https://docs.python.org/3/', docSite: 'python.org' },
         { name: 'React', directory: 'react', doc: 'https://react.dev/', docSite: 'React.dev' },
         { name: 'SQL', directory: 'sql', doc: 'https://www.w3schools.com/sql/', docSite: 'W3Schools' },
-        { name: 'MongoDB', directory: 'mongodb', doc: 'https://www.mongodb.com/docs/', docSite: 'mongodb.com' }
+        { name: 'MongoDB', directory: 'mongodb', doc: 'https://www.mongodb.com/docs/', docSite: 'mongodb.com' },
+        { name: 'Git', directory: 'git', doc: 'https://git-scm.com/doc', docSite: 'git-scm.com' }
     ];
 
     let doc = '';

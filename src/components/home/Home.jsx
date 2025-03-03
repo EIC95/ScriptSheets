@@ -22,7 +22,8 @@ function Home() {
         { name: 'Python', path: 'python/basics', icon: 'python.svg' },
         { name: 'React', path: 'react/introduction', icon: 'react.svg' },
         { name: 'SQL', path: 'sql/databases', icon: 'sql.svg' },
-        { name: 'MongoDB', path: 'mongodb/basics', icon: 'mongodb.svg' }
+        { name: 'MongoDB', path: 'mongodb/basics', icon: 'mongodb.svg' },
+        { name: 'Git', path: 'git/getting_started', icon: 'git.svg' }
     ], []); // Empty dependency array ensures it is created only once
 
     return (

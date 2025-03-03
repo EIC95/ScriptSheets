@@ -26,6 +26,7 @@ function Navbar() {
         { name: "React", directory: "react", path: "react/introduction", icon: "react.svg", color: "#61DBFB" },
         { name: "SQL", directory: "sql", path: "sql/databases", icon: "sql.svg", color: "#61DBFB" },
         { name: "MongoDB", directory: "mongodb", path: "mongodb/basics", icon: "mongodb.svg", color: "#00684A" },
+        { name: "Git", directory: "git", path: "git/getting_started", icon: "git.svg", color: "#F64D27" },
     ], []);
 
     // Get the current location to determine the active section
