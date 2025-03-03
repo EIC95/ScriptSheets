@@ -1,4 +1,4 @@
-# SQL Summary
+# SQL
 
 - [Databases](databases)
 - [Data Selection](select)
