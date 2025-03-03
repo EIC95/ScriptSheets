@@ -7,5 +7,5 @@
 - [Document Update](update)
 - [Document Deletion](delete)
 - [Aggregations](agregations)
-- [Security and Authentication](security)
+- [Security and Authentication](security_and_authentication)
 
