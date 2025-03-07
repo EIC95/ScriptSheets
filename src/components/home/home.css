@@ -2,34 +2,27 @@
     height: 94vh;
     overflow-y: auto;
     overflow-x: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 25px 15px;
     color: var(--title);
 }
 
 /* Hero section: vertically centered with reverse column direction for mobile */
 .hero {
     display: flex;
-    flex-direction: column-reverse;
-    height: 100%;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .hero img {
     align-self: center;
-    margin-bottom: 15px;
-}
-
-/* Main title styling */
-.home h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    width: 225px;
+    margin-bottom: 50px;
 }
 
 .hero div p {
     line-height: 1.5;
     word-spacing: 2px;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 /* Call-to-action (CTA) button styling */
@@ -38,6 +31,17 @@
     padding: 10px;
     color: white;
     border-radius: 8px;
+    transition: transform ease-in-out 0.2s;
+}
+
+.cta-container a:hover {
+    transform: translateY(-5px);
+}
+
+.cta-container a span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .cta-container a:hover {
@@ -47,38 +51,54 @@
 /* CTA container layout */
 .cta-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 50px;
 }
 
 /* Highlighted home title */
 .home-title {
     color: var(--default);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* Cheatsheets grid container */
 .cheatsheets-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     margin-top: 2rem;
-    gap: 1rem;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    gap: 2rem;
 }
 
 /* Individual cheatsheet card */
 .cheatsheets-container a {
-    padding: 20px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     border: solid 1px var(--accent);
     border-radius: 15px;
-    background-color: var(--accent);
+    transition: transform ease-in-out 0.2s;
+}
+
+.cheatsheets-container a img{
+    transition: transform ease-in-out 0.2s;
 }
 
 .cheatsheets-container a:hover {
-    border: solid 1px var(--text);
+    border: solid 1px var(--default);
     color: var(--title);
+    transform: translateY(-5px);
+    transition: transform ease-in-out 0.2s;
+}
+
+.cheatsheets-container a:hover img{
+    transform: rotate(10deg) scale(1.1);
+    transition: transform ease-in-out 0.2s;
 }
 
 /* Footer spacing */
@@ -99,12 +119,6 @@ hr {
         height: 93vh;
     }
 
-    /* Adjust CTA alignment for larger screens */
-    .cta-container {
-        justify-content: space-between;
-        width: 40%;
-    }
-
     .hero img {
         margin-bottom: 50px;
     }
@@ -117,38 +131,53 @@ hr {
 
     /* Switch hero section to row layout for desktops */
     .hero {
-        padding-bottom: 0;
-        flex-direction: inherit;
+        flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        width: 100%;
+        height: 91vh;
     }
 
-    .hero div {
-        width: 45%;
+    .hero div p{
+        text-align: left;
+    }
+
+    .home-title{
+        text-align: left
+    }
+
+    .hero div{
+        width: 50%;
+    }
+
+    .cta-container{
+        flex-direction: inherit;
+        align-items: inherit;
+    }
+
+    .cheatsheets-container{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
 
 @media (min-width: 1440px) {
-    .home {
+    .home, .hero {
         height: 93vh;
     }
 
-    /* Add more padding for extra-large screens */
-    .hero {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .hero div {
-        width: 35%;
-    }
-
     .hero div p {
-        font-size: large;
+        font-size: larger;
     }
 
-    .cta-container {
-        width: 45% !important;
+    .cheatsheets-container{
+        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    }
+
+    .cta-container{
+        gap: 10px;
+    }
+
+    .cta-container a{
+        padding: 15px;
+        font-size: larger;
     }
 }

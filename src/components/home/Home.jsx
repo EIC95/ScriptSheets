@@ -59,7 +59,7 @@ function Home() {
 
             {/* Cheat Sheets section listing available technologies */}
             <div>
-                <h1 id="cheatsheets" className="home-title">Cheat Sheets</h1>
+                <h1 id="cheatsheets" className="home-title">Cheat sheets</h1>
                 <div className="cheatsheets-container">
                     {technologies.map((tech) => (
                         <Link key={tech.name} to={tech.path}>
