@@ -11,7 +11,7 @@
 - [Forms](forms)
 - [Dates](dates)
 - [Includes](includes)
-- [Files Handling](files_handling)
+- [Files Handling](file_handling)
 - [Cookies](cookies)
 - [Sessions](sessions)
 - [Filters](filters)
