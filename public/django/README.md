@@ -9,4 +9,5 @@
 - [Authentication & Authorization](auth)  
 - [Middleware](middleware)  
 - [APIs with Django](api)  
-- [Security](security)  
+- [Security](security)
+- [Deployment](deployment) 
