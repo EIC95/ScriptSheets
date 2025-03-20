@@ -1,6 +1,6 @@
 # Security in Django
 
-## 1. Cross-Site Request Forgery (CSRF) Protection
+## Cross-Site Request Forgery (CSRF) Protection
 
 ### Enabling CSRF Protection (Default)
 
@@ -33,9 +33,7 @@ def my_view(request):
     return HttpResponse("CSRF Exempted")
 ```
 
----
-
-## 2. SQL Injection Protection
+## SQL Injection Protection
 
 Django’s ORM prevents SQL injection by using parameterized queries:
 
@@ -49,9 +47,7 @@ User.objects.filter(username="admin")
 cursor.execute("SELECT * FROM users WHERE username = '" + user_input + "'")
 ```
 
----
-
-## 3. Cross-Site Scripting (XSS) Protection
+## Cross-Site Scripting (XSS) Protection
 
 Django escapes HTML by default in templates:
 
@@ -76,9 +72,7 @@ import bleach
 clean_data = bleach.clean(user_input)
 ```
 
----
-
-## 4. Clickjacking Protection
+## Clickjacking Protection
 
 Django includes clickjacking protection via middleware:
 
@@ -96,9 +90,7 @@ To allow embedding only on specific sites:
 X_FRAME_OPTIONS = 'ALLOW-FROM https://trusteddomain.com'
 ```
 
----
-
-## 5. Secure Password Storage
+## Secure Password Storage
 
 Django hashes passwords using a strong algorithm:
 
@@ -120,9 +112,7 @@ PASSWORD_HASHERS = [
 ]
 ```
 
----
-
-## 6. HTTPS and Secure Cookies
+## HTTPS and Secure Cookies
 
 Force Django to use HTTPS:
 
@@ -142,9 +132,7 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 ```
 
----
-
-## 7. Restricting User Permissions
+## Restricting User Permissions
 
 ### Limiting Access to Views
 
@@ -171,9 +159,7 @@ user = User.objects.get(username="john")
 user.groups.add(group)
 ```
 
----
-
-## 8. Security Headers
+## Security Headers
 
 Set security headers using middleware:
 
@@ -182,8 +168,6 @@ Set security headers using middleware:
 SECURE_BROWSER_XSS_FILTER = True
 X_CONTENT_TYPE_OPTIONS = "nosniff"
 ```
-
----
 
 ## Common Pitfalls:
 - Allowing users to submit unsanitized HTML.

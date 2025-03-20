@@ -18,8 +18,6 @@ INSTALLED_APPS = [
 ]
 ```
 
----
-
 ## Creating a Serializer
 
 ```python
@@ -32,8 +30,6 @@ class ProductSerializer(serializers.ModelSerializer):
         model = Product
         fields = ['id', 'name', 'description', 'price']
 ```
-
----
 
 ## Creating API Views
 
@@ -53,8 +49,6 @@ def product_list(request):
     return Response(serializer.data)
 ```
 
----
-
 ### Class-Based Views
 
 ```python
@@ -68,8 +62,6 @@ class ProductListCreate(generics.ListCreateAPIView):
     serializer_class = ProductSerializer
 ```
 
----
-
 ## Creating API URLs
 
 ```python
@@ -82,8 +74,6 @@ urlpatterns = [
     path('products/create/', ProductListCreate.as_view(), name='product-create'),
 ]
 ```
-
----
 
 ## Handling Authentication
 
@@ -118,8 +108,6 @@ INSTALLED_APPS += ['rest_framework.authtoken']
 python manage.py drf_create_token <username>
 ```
 
----
-
 ## Using ViewSets and Routers
 
 ```python
@@ -146,8 +134,6 @@ urlpatterns = [
     path('api/', include(router.urls)),
 ]
 ```
-
----
 
 ## Common Pitfalls:
 - Forgetting to include `'rest_framework'` in `INSTALLED_APPS`.
