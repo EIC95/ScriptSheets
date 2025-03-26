@@ -1,81 +1,69 @@
-# Modules
+# Working with Modules
 
-## Introduction
-Node.js uses a module system to organize code into reusable units. A module is simply a JavaScript file that can export functions, objects, or variables and be imported into other files.
+## Creating and Exporting Modules
 
-## Importing and Exporting Modules
+Modules are created by exporting functions or objects via `module.exports`.
 
-### Exporting a Module
-In Node.js, a module can be defined using `module.exports` or `exports`.
+### Example:
+```javascript
+// file config.js
+const config = {
+  db: 'mongodb://localhost:27017/mydb',
+  port: 3000
+};
 
-#### Example with `module.exports`
-```js
-// math.js
-module.exports.add = (a, b) => a + b;
-module.exports.subtract = (a, b) => a - b;
+module.exports = config;
 ```
 
-#### Example with `exports`
-```js
-// math.js
-exports.multiply = (a, b) => a * b;
-exports.divide = (a, b) => a / b;
+## Importing Modules (CommonJS & ES Modules)
+
+Node.js supports two module import systems: **CommonJS** and **ES Modules**.
+
+### CommonJS
+Uses `require` to import modules.
+
+### Example:
+```javascript
+// file app.js
+const config = require('./config');
+console.log(config.db); // Displays the database URL
 ```
 
-### Importing a Module
-Use `require()` to import a module.
+### ES Modules
+ESM uses `import` and `export`, but requires `.mjs` files or `"type": "module"` in `package.json`.
 
-```js
-// app.js
-const math = require("./math");
-console.log(math.add(5, 3)); // 8
-console.log(math.multiply(4, 2)); // 8
+### Example:
+```javascript
+// file config.mjs
+export const config = {
+  db: 'mongodb://localhost:27017/mydb',
+  port: 3000
+};
+```
+```javascript
+// file app.mjs
+import { config } from './config.mjs';
+console.log(config.db); // Displays the database URL
 ```
 
-## Built-in Node.js Modules
-Node.js includes several built-in modules that are available without installation.
+## Using Third-Party Modules (npm)
 
-### Example: `fs` (File System)
-```js
-const fs = require("fs");
-fs.writeFileSync("test.txt", "Hello, Node.js!");
+Third-party modules can be installed via **npm** to add external functionality. For example, `dotenv` is used to load environment variables from a `.env` file.
+
+### Installing `dotenv`:
+```bash
+npm install dotenv
 ```
 
-### Example: `path`
-```js
-const path = require("path");
-console.log(path.join(__dirname, "test.txt"));
+### Example with dotenv:
+```javascript
+// file .env
+DB_URL=mongodb://localhost:27017/mydb
+PORT=3000
 ```
-
-## Third-Party Modules with npm
-In addition to built-in modules, Node.js allows using third-party modules via npm.
-
-### Installing a Module
-```sh
-npm install lodash
+```javascript
+// file app.js
+require('dotenv').config();
+console.log(process.env.DB_URL); // Displays the database URL from .env
+console.log(process.env.PORT);   // Displays the port from .env
 ```
-
-### Using an Installed Module
-```js
-const _ = require("lodash");
-console.log(_.capitalize("hello world")); // "Hello world"
-```
-
-## ES Modules (ESM)
-Node.js also supports `import/export` syntax.
-
-### Exporting with ESM
-```js
-// math.js
-export function add(a, b) {
-  return a + b;
-}
-```
-
-### Importing with ESM
-```js
-// app.js
-import { add } from "./math.js";
-console.log(add(2, 3));
-```
-
