@@ -51,6 +51,21 @@ nav {
     display: flex;
     align-items: center;
     gap: 5px;
+    overflow-x: auto;
+}
+
+.dropdown-options::-webkit-scrollbar{
+    height: 7px;
+}
+
+.dropdown-options::-webkit-scrollbar-track{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.dropdown-options::-webkit-scrollbar-thumb{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* Dropdown Menu */
@@ -59,10 +74,11 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
+    max-height: 400px;
     background-color: var(--background);
     box-shadow: var(--shadow);
     border-radius: 5px;
-    overflow: hidden;
+    overflow-x: auto;
     width: max-content;
     min-width: 160px;
     flex-direction: column;
