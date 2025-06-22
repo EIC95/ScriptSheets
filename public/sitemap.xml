@@ -55,4 +55,8 @@
         <loc>https://scriptsheets.eic.codes/mongodb/basics</loc>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://scriptsheets.eic.codes/typescript/fundamentals</loc>
+        <priority>0.8</priority>
+    </url>
 </urlset>

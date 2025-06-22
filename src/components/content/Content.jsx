@@ -27,7 +27,8 @@ function Content() {
         { name: 'SQL', directory: 'sql', doc: 'https://www.w3schools.com/sql/', docSite: 'W3Schools' },
         { name: 'MongoDB', directory: 'mongodb', doc: 'https://www.mongodb.com/docs/', docSite: 'mongodb.com' },
         { name: 'Git', directory: 'git', doc: 'https://git-scm.com/doc', docSite: 'git-scm.com' },
-        { name: 'Django', directory: 'django', doc: 'https://docs.djangoproject.com', docSite: 'djangoproject.com' }
+        { name: 'Django', directory: 'django', doc: 'https://docs.djangoproject.com', docSite: 'djangoproject.com' },
+        { name: 'Typescript', directory: 'typescript', doc: 'https://www.typescriptlang.org/docs', docSite: 'typescriptlang.org' },
     ];
 
     let doc = '';
