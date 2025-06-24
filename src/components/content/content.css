@@ -95,6 +95,22 @@ table {
     text-decoration: underline;
 }
 
+/* Link styling */
+.content a:not(.underline, .edit) {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease-in-out;
+}
+
+.content a:not(.underline, .edit):hover {
+    border-bottom-color: var(--primary);
+}
+
+.content a:not(.underline, .edit):active {
+    opacity: 0.8;
+}
+
 /* Responsive adjustments */
 @media (min-width: 768px) {
     .content {
