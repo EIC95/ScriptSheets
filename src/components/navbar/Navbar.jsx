@@ -28,7 +28,7 @@ function Navbar() {
         { name: "MongoDB", directory: "mongodb", path: "mongodb/basics", icon: "mongodb.svg", color: "#00684A" },
         { name: "Git", directory: "git", path: "git/getting_started", icon: "git.svg", color: "#F64D27" },
         { name: "Django", directory: "django", path: "django/introduction", icon: "django.svg", color: "#51BE95" },
-        { name: "Typescript", directory: "typescript", path: "typescript/basics", icon: "typescript.svg", color: "#007ACC" },
+        { name: "Typescript", directory: "typescript", path: "typescript/fundamentals", icon: "typescript.svg", color: "#007ACC" },
     ], []);
 
     // Get the current location to determine the active section
